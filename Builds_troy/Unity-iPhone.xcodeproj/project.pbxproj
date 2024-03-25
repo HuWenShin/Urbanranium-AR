@@ -11,6 +11,7 @@
 		01F967D36F74C7C4205C1BD6 /* lib_burst_generated.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB61E49F0B27D71CDA3B02F /* lib_burst_generated.a */; };
 		030A68812E193A334BDD7087 /* iOSStepCounter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2E23E0EB80EBE2A174954738 /* iOSStepCounter.mm */; };
 		093BCFF2BBCF5A03AC1F3A79 /* libUnityARKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EEE1E37BF080C030B89E34 /* libUnityARKit.a */; };
+		0D8E61B186FB3EEB088C4F5B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5692F3DC0FA9D8E500EBA2F1 /* CoreLocation.framework */; };
 		1D45A5CCCCC4E76191AAF1D0 /* libil2cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE54DC7E56FA015DDC9659BD /* libil2cpp.a */; };
 		31225D1650DC00B5516F4BE8 /* UnityARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DFB872639FBCC349F7C3A6 /* UnityARKit.m */; };
 		415674EFD2EC187355BC05B1 /* LaunchScreen-iPhoneLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E24B93E9D27D99850693BAF /* LaunchScreen-iPhoneLandscape.png */; };
@@ -700,6 +701,7 @@
 				8F3F7ABF709C0E5FB7421F58 /* ARKit.framework in Frameworks */,
 				9B0D4ECB63A8ECE651E3FE52 /* MetalPerformanceShaders.framework in Frameworks */,
 				574A8D1BFDF4103B13A6538A /* GameController.framework in Frameworks */,
+				0D8E61B186FB3EEB088C4F5B /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

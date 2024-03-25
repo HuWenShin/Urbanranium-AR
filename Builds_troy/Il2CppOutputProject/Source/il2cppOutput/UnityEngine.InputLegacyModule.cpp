@@ -22,6 +22,7 @@ struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
 struct Display_t06A3B0F5169CA3C02A4D5171F27499A23D3581D1;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+struct LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2;
 struct MethodInfo_t;
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 struct RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27;
@@ -31,8 +32,11 @@ struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 struct DisplaysUpdatedDelegate_t1BAACED9BE72131FD59213A3186F5D7AB9E1FD68;
 
 IL2CPP_EXTERN_C RuntimeClass* CameraU5BU5D_t1506EBA524A07AD1066D6DD4D7DFC6721F1AC26B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Display_t06A3B0F5169CA3C02A4D5171F27499A23D3581D1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HitInfoU5BU5D_tDAE7DF0D2B0BE3EB2FD25FB4418704E27A2BF1D5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Input_t47D83E2A50E6AF7F8A47AA06FBEF9EBE6BBC22BB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SendMouseEvents_t30F6848ABBD277C51340A02CF6664B8D6183EC39_il2cpp_TypeInfo_var;
@@ -42,6 +46,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral3C6F094A63750A8BD369D8A9138F0648FB74B3C4
 IL2CPP_EXTERN_C String_t* _stringLiteralA2CF8B549405D8D0F26F85E3A40C8B2ABAD0A6AC;
 IL2CPP_EXTERN_C String_t* _stringLiteralD78A7BBB42C0B3DA05AC02E0AABB5E0765462D84;
 IL2CPP_EXTERN_C String_t* _stringLiteralD81EFB7B653AC118C2D1B850D9F6D2FFEB225821;
+IL2CPP_EXTERN_C String_t* _stringLiteralDC882D862D2AD3DE841FE759A1D95DB993B5DBBC;
 IL2CPP_EXTERN_C String_t* _stringLiteralE0C5D7D5DD5695D97E4EDCB4705E9F1AF10AF695;
 IL2CPP_EXTERN_C String_t* _stringLiteralE69C6A3A0BD2A9030375061C78273B2EABD411D0;
 IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Key_m276DF1835C1D690AEE5DE26E790EDAE0A0950B91_RuntimeMethod_var;
@@ -74,6 +79,9 @@ struct Input_t47D83E2A50E6AF7F8A47AA06FBEF9EBE6BBC22BB  : public RuntimeObject
 struct InputUnsafeUtility_t821FE2234846FA36C5E892477C45B79F0DB7AB6F  : public RuntimeObject
 {
 };
+struct LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2  : public RuntimeObject
+{
+};
 struct SendMouseEvents_t30F6848ABBD277C51340A02CF6664B8D6183EC39  : public RuntimeObject
 {
 };
@@ -99,6 +107,10 @@ struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3
 {
 	uint8_t ___m_value;
 };
+struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F 
+{
+	double ___m_value;
+};
 struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
 {
 };
@@ -115,6 +127,15 @@ struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C
 struct IntPtr_t 
 {
 	void* ___m_value;
+};
+struct LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441 
+{
+	double ___m_Timestamp;
+	float ___m_Latitude;
+	float ___m_Longitude;
+	float ___m_Altitude;
+	float ___m_HorizontalAccuracy;
+	float ___m_VerticalAccuracy;
 };
 struct Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682 
 {
@@ -238,6 +259,10 @@ struct IMECompositionMode_t91425E64935387F2A2686BDE3FA67E047794FCD0
 {
 	int32_t ___value__;
 };
+struct LocationServiceStatus_tF9F78681F963A53FD6CA4CDC2DDDBD7B4DF517F7 
+{
+	int32_t ___value__;
+};
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
 	intptr_t ___m_CachedPtr;
@@ -334,6 +359,10 @@ struct RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27  : public Texture
 };
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
 {
+};
+struct Input_t47D83E2A50E6AF7F8A47AA06FBEF9EBE6BBC22BB_StaticFields
+{
+	LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* ___locationServiceInstance;
 };
 struct SendMouseEvents_t30F6848ABBD277C51340A02CF6664B8D6183EC39_StaticFields
 {
@@ -569,6 +598,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Touch_get_altitudeAngle_m26DEF010E2CDC2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Touch_get_azimuthAngle_m2F11532183492E608922A2F9D9EC9AC31D34F490 (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Touch_get_radius_m5BC9C50DABBB17B07742BAFC6CC36A6736AE7960 (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Touch_get_radiusVariance_m6F54BE964B91C3B2F8FA2A483E1FDB644B282B21 (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_altitude_m3B4BE2F447F3599F5677DD72A86C3A1A801ABAE0 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_horizontalAccuracy_m3178154DD5F4F72B8743665F33CCAE5BEC6296F4 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double LocationInfo_get_timestamp_mAD1095E60A61DF0FA66195AA06A0F801CF9BDC9F (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_GetLastLocation_Injected_m2463D5B46B8E9CA2C10AB3E611CD176BE7C3D472 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* ___0_ret, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LocationService_GetLocationStatus_m1BE18671C8A455141C877979259EB9BA546A9103 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LocationService_get_status_m25B7C4012B9529265D9746BB73ED689737E9C9CD (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441 LocationService_GetLastLocation_m50BFC921ADF32DD69D00937B44131B0770D4F662 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_SetDesiredAccuracy_m6F69C809996908CD95C17A6BD96D216667FD5B58 (float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_SetDistanceFilter_m847B85271A56F9291337C79E6C80012F2BD6C1AE (float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_StartUpdatingLocation_m93789B3CDDF62EBD26326127DEC65C6C94123D29 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_Start_m5076FE201E96C086B0F9C2D8677DA69C98099F3D (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, float ___0_desiredAccuracyInMeters, float ___1_updateDistanceInMeters, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* CameraRaycastHelper_RaycastTry_Injected_m4A9EA285FB7B24B7B3D894E7EE997B41ED302DEF (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___0_cam, Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00* ___1_ray, float ___2_distance, int32_t ___3_layerMask, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* CameraRaycastHelper_RaycastTry2D_Injected_m2620821FE8CB793C314AAE43E3B4C7BEAE5D4C9E (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___0_cam, Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00* ___1_ray, float ___2_distance, int32_t ___3_layerMask, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float InputUnsafeUtility_GetAxis_m034889C00C914572B94F091E8EC646E86408A29F (String_t* ___0_axisName, const RuntimeMethod* method) ;
@@ -581,6 +626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Input_get_mousePosition_Injected_m7EF43A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Input_get_mouseScrollDelta_Injected_m31BF633C98E1BBA4583E7FCE0573BDECB1BA4A29 (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___0_ret, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Input_get_compositionCursorPos_Injected_m67C1CB8A21F4708CA76FAB39E3BC436DE33C214E (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___0_ret, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Input_set_compositionCursorPos_Injected_m46E4934CD2A9F2E97B8A86D52169C848EF6D91E8 (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService__ctor_mCA7E0A5F2303FE28CE83787FEE9C5A020195E6DC (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, const RuntimeMethod* method) ;
 inline KeyValuePair_2_t657A531CD05C008B73C5D0F163CA4C219E650EBD Func_1_Invoke_m1D6B3CC8B29B304CD3DFCEF6E85A541051A1155F_inline (Func_1_tF5F7F5DCF1679E08B2536581A6E1EEF5529155C9* __this, const RuntimeMethod* method)
 {
 	return ((  KeyValuePair_2_t657A531CD05C008B73C5D0F163CA4C219E650EBD (*) (Func_1_tF5F7F5DCF1679E08B2536581A6E1EEF5529155C9*, const RuntimeMethod*))Func_1_Invoke_m1D6B3CC8B29B304CD3DFCEF6E85A541051A1155F_gshared_inline)(__this, method);
@@ -1091,6 +1137,308 @@ IL2CPP_EXTERN_C  float Touch_get_radiusVariance_m6F54BE964B91C3B2F8FA2A483E1FDB6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->___m_Latitude;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		float L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  float LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441*>(__this + _offset);
+	float _returnValue;
+	_returnValue = LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863(_thisAdjusted, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->___m_Longitude;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		float L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  float LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441*>(__this + _offset);
+	float _returnValue;
+	_returnValue = LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2(_thisAdjusted, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_altitude_m3B4BE2F447F3599F5677DD72A86C3A1A801ABAE0 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->___m_Altitude;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		float L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  float LocationInfo_get_altitude_m3B4BE2F447F3599F5677DD72A86C3A1A801ABAE0_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441*>(__this + _offset);
+	float _returnValue;
+	_returnValue = LocationInfo_get_altitude_m3B4BE2F447F3599F5677DD72A86C3A1A801ABAE0(_thisAdjusted, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_horizontalAccuracy_m3178154DD5F4F72B8743665F33CCAE5BEC6296F4 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->___m_HorizontalAccuracy;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		float L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  float LocationInfo_get_horizontalAccuracy_m3178154DD5F4F72B8743665F33CCAE5BEC6296F4_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441*>(__this + _offset);
+	float _returnValue;
+	_returnValue = LocationInfo_get_horizontalAccuracy_m3178154DD5F4F72B8743665F33CCAE5BEC6296F4(_thisAdjusted, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double LocationInfo_get_timestamp_mAD1095E60A61DF0FA66195AA06A0F801CF9BDC9F (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) 
+{
+	double V_0 = 0.0;
+	{
+		double L_0 = __this->___m_Timestamp;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		double L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  double LocationInfo_get_timestamp_mAD1095E60A61DF0FA66195AA06A0F801CF9BDC9F_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441*>(__this + _offset);
+	double _returnValue;
+	_returnValue = LocationInfo_get_timestamp_mAD1095E60A61DF0FA66195AA06A0F801CF9BDC9F(_thisAdjusted, method);
+	return _returnValue;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF (const RuntimeMethod* method) 
+{
+	typedef bool (*LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF_ftn) ();
+	static LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.LocationService::IsServiceEnabledByUser()");
+	bool icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LocationService_GetLocationStatus_m1BE18671C8A455141C877979259EB9BA546A9103 (const RuntimeMethod* method) 
+{
+	typedef int32_t (*LocationService_GetLocationStatus_m1BE18671C8A455141C877979259EB9BA546A9103_ftn) ();
+	static LocationService_GetLocationStatus_m1BE18671C8A455141C877979259EB9BA546A9103_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (LocationService_GetLocationStatus_m1BE18671C8A455141C877979259EB9BA546A9103_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.LocationService::GetLocationStatus()");
+	int32_t icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441 LocationService_GetLastLocation_m50BFC921ADF32DD69D00937B44131B0770D4F662 (const RuntimeMethod* method) 
+{
+	LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		LocationService_GetLastLocation_Injected_m2463D5B46B8E9CA2C10AB3E611CD176BE7C3D472((&V_0), NULL);
+		LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441 L_0 = V_0;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_SetDesiredAccuracy_m6F69C809996908CD95C17A6BD96D216667FD5B58 (float ___0_value, const RuntimeMethod* method) 
+{
+	typedef void (*LocationService_SetDesiredAccuracy_m6F69C809996908CD95C17A6BD96D216667FD5B58_ftn) (float);
+	static LocationService_SetDesiredAccuracy_m6F69C809996908CD95C17A6BD96D216667FD5B58_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (LocationService_SetDesiredAccuracy_m6F69C809996908CD95C17A6BD96D216667FD5B58_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.LocationService::SetDesiredAccuracy(System.Single)");
+	_il2cpp_icall_func(___0_value);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_SetDistanceFilter_m847B85271A56F9291337C79E6C80012F2BD6C1AE (float ___0_value, const RuntimeMethod* method) 
+{
+	typedef void (*LocationService_SetDistanceFilter_m847B85271A56F9291337C79E6C80012F2BD6C1AE_ftn) (float);
+	static LocationService_SetDistanceFilter_m847B85271A56F9291337C79E6C80012F2BD6C1AE_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (LocationService_SetDistanceFilter_m847B85271A56F9291337C79E6C80012F2BD6C1AE_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.LocationService::SetDistanceFilter(System.Single)");
+	_il2cpp_icall_func(___0_value);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_StartUpdatingLocation_m93789B3CDDF62EBD26326127DEC65C6C94123D29 (const RuntimeMethod* method) 
+{
+	typedef void (*LocationService_StartUpdatingLocation_m93789B3CDDF62EBD26326127DEC65C6C94123D29_ftn) ();
+	static LocationService_StartUpdatingLocation_m93789B3CDDF62EBD26326127DEC65C6C94123D29_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (LocationService_StartUpdatingLocation_m93789B3CDDF62EBD26326127DEC65C6C94123D29_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.LocationService::StartUpdatingLocation()");
+	_il2cpp_icall_func();
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LocationService_get_isEnabledByUser_m78FE3A38B1101BAF658E259C1A6B4CD9A008DCAE (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		bool L_0;
+		L_0 = LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF(NULL);
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		bool L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LocationService_get_status_m25B7C4012B9529265D9746BB73ED689737E9C9CD (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0;
+		L_0 = LocationService_GetLocationStatus_m1BE18671C8A455141C877979259EB9BA546A9103(NULL);
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		int32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441 LocationService_get_lastData_m50C68F3DFB23894CF519F00BBA9D72146EE9345F (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDC882D862D2AD3DE841FE759A1D95DB993B5DBBC);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		int32_t L_0;
+		L_0 = LocationService_get_status_m25B7C4012B9529265D9746BB73ED689737E9C9CD(__this, NULL);
+		V_0 = (bool)((((int32_t)((((int32_t)L_0) == ((int32_t)2))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralDC882D862D2AD3DE841FE759A1D95DB993B5DBBC, NULL);
+	}
+
+IL_001c:
+	{
+		LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441 L_2;
+		L_2 = LocationService_GetLastLocation_m50BFC921ADF32DD69D00937B44131B0770D4F662(NULL);
+		V_1 = L_2;
+		goto IL_0024;
+	}
+
+IL_0024:
+	{
+		LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441 L_3 = V_1;
+		return L_3;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_Start_m5076FE201E96C086B0F9C2D8677DA69C98099F3D (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, float ___0_desiredAccuracyInMeters, float ___1_updateDistanceInMeters, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_desiredAccuracyInMeters;
+		LocationService_SetDesiredAccuracy_m6F69C809996908CD95C17A6BD96D216667FD5B58(L_0, NULL);
+		float L_1 = ___1_updateDistanceInMeters;
+		LocationService_SetDistanceFilter_m847B85271A56F9291337C79E6C80012F2BD6C1AE(L_1, NULL);
+		LocationService_StartUpdatingLocation_m93789B3CDDF62EBD26326127DEC65C6C94123D29(NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_Start_mC2A90619923D4BEB5F9B5CCD95F317B98D67AF3A (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, const RuntimeMethod* method) 
+{
+	{
+		LocationService_Start_m5076FE201E96C086B0F9C2D8677DA69C98099F3D(__this, (10.0f), (10.0f), NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService__ctor_mCA7E0A5F2303FE28CE83787FEE9C5A020195E6DC (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_GetLastLocation_Injected_m2463D5B46B8E9CA2C10AB3E611CD176BE7C3D472 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* ___0_ret, const RuntimeMethod* method) 
+{
+	typedef void (*LocationService_GetLastLocation_Injected_m2463D5B46B8E9CA2C10AB3E611CD176BE7C3D472_ftn) (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441*);
+	static LocationService_GetLastLocation_Injected_m2463D5B46B8E9CA2C10AB3E611CD176BE7C3D472_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (LocationService_GetLastLocation_Injected_m2463D5B46B8E9CA2C10AB3E611CD176BE7C3D472_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.LocationService::GetLastLocation_Injected(UnityEngine.LocationInfo&)");
+	_il2cpp_icall_func(___0_ret);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* CameraRaycastHelper_RaycastTry_m79A654495BD2C09623E9067BCC70D23A0DA3BF58 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___0_cam, Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 ___1_ray, float ___2_distance, int32_t ___3_layerMask, const RuntimeMethod* method) 
 {
 	{
@@ -1338,6 +1686,46 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_get_touchSupported_m2A4FA398A79386
 	_il2cpp_icall_func = (Input_get_touchSupported_m2A4FA398A793861AE1BC5971A1363552AB33BEEF_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::get_touchSupported()");
 	bool icallRetVal = _il2cpp_icall_func();
 	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* Input_get_location_m1D1FA0938E5B83C46A666CE78D95A58B39164DB5 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Input_t47D83E2A50E6AF7F8A47AA06FBEF9EBE6BBC22BB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* V_1 = NULL;
+	{
+		LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* L_0 = ((Input_t47D83E2A50E6AF7F8A47AA06FBEF9EBE6BBC22BB_StaticFields*)il2cpp_codegen_static_fields_for(Input_t47D83E2A50E6AF7F8A47AA06FBEF9EBE6BBC22BB_il2cpp_TypeInfo_var))->___locationServiceInstance;
+		V_0 = (bool)((((RuntimeObject*)(LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2*)L_0) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* L_2 = (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2*)il2cpp_codegen_object_new(LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2_il2cpp_TypeInfo_var);
+		LocationService__ctor_mCA7E0A5F2303FE28CE83787FEE9C5A020195E6DC(L_2, NULL);
+		((Input_t47D83E2A50E6AF7F8A47AA06FBEF9EBE6BBC22BB_StaticFields*)il2cpp_codegen_static_fields_for(Input_t47D83E2A50E6AF7F8A47AA06FBEF9EBE6BBC22BB_il2cpp_TypeInfo_var))->___locationServiceInstance = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&((Input_t47D83E2A50E6AF7F8A47AA06FBEF9EBE6BBC22BB_StaticFields*)il2cpp_codegen_static_fields_for(Input_t47D83E2A50E6AF7F8A47AA06FBEF9EBE6BBC22BB_il2cpp_TypeInfo_var))->___locationServiceInstance), (void*)L_2);
+	}
+
+IL_0017:
+	{
+		LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* L_3 = ((Input_t47D83E2A50E6AF7F8A47AA06FBEF9EBE6BBC22BB_StaticFields*)il2cpp_codegen_static_fields_for(Input_t47D83E2A50E6AF7F8A47AA06FBEF9EBE6BBC22BB_il2cpp_TypeInfo_var))->___locationServiceInstance;
+		V_1 = L_3;
+		goto IL_001f;
+	}
+
+IL_001f:
+	{
+		LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* L_4 = V_1;
+		return L_4;
+	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_CheckDisabled_m359B281F7F5DDAB74780E1898311AECD9B0ECCE1 (const RuntimeMethod* method) 
 {

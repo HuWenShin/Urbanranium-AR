@@ -17505,7 +17505,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRUIInputModule_OnEnable_mB938D9A55AF66E
 	XRUIInputModule_tA641266A2621C1465F3C5433D747428A4CDA72F0* G_B3_1 = NULL;
 	{
 		BaseInputModule_OnEnable_m2F440F226F94D4D79905CD403F08C3AEEE99D965(__this, NULL);
-		__this->___m_ActiveInputMode = 1;
 		int32_t L_0 = __this->___m_RollingPointerId;
 		V_0 = L_0;
 		int32_t L_1 = V_0;
@@ -17570,7 +17569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRUIInputModule_OnEnable_mB938D9A55AF66E
 		if (!L_5)
 		{
 			G_B2_0 = __this;
-			goto IL_0049;
+			goto IL_0042;
 		}
 		G_B1_0 = __this;
 	}
@@ -17579,30 +17578,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRUIInputModule_OnEnable_mB938D9A55AF66E
 		L_6 = XRUIInputModule_InputActionReferencesAreSet_m822F7B7FA9A82D2ACFE91BA0BA9D76EC5219DFC5(__this, NULL);
 		G_B3_0 = ((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
 		G_B3_1 = G_B1_0;
-		goto IL_004a;
+		goto IL_0043;
 	}
 
-IL_0049:
+IL_0042:
 	{
 		G_B3_0 = 0;
 		G_B3_1 = G_B2_0;
 	}
 
-IL_004a:
+IL_0043:
 	{
 		NullCheck(G_B3_1);
 		G_B3_1->___m_UseBuiltInInputSystemActions = (bool)G_B3_0;
 		int32_t L_7 = __this->___m_ActiveInputMode;
 		if (!L_7)
 		{
-			goto IL_005d;
+			goto IL_0056;
 		}
 	}
 	{
 		XRUIInputModule_EnableAllActions_m4E7A83803EEEC56E03AD359EC48D82574A026D2C(__this, NULL);
 	}
 
-IL_005d:
+IL_0056:
 	{
 		return;
 	}

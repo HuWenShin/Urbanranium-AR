@@ -14,6 +14,10 @@
 
 extern void ChangeScene_MoveToScene_mBF507DB36F89EDCAB1929C03591B00CB6419F001 (void);
 extern void ChangeScene__ctor_m3E36D5BBE7C2716976E7E5865E0D82DF0EE0832C (void);
+extern void ChangeText_Start_m73D69C27CD7C03B6A728EDE4B2AD41954761A4E8 (void);
+extern void ChangeText_OnPointerEnter_mB75AE1CB3641386AFF71D9A736DD686D8CC6E29E (void);
+extern void ChangeText_OnPointerExit_mD0259E4DA6A6DC85CB5388C111C5DA0A71E92CB7 (void);
+extern void ChangeText__ctor_mB4CFD9B312C40C423FD553B93F70FC9B82ED5DBF (void);
 extern void NavBar_deactivatePanel_m80A53D4C68669F8970D31214B5040204B9435E35 (void);
 extern void NavBar__ctor_mA6C97473CC36F4876CD15F03BE95667D02C4AA0E (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m379D45294C561A6E22B6F4EC0E6C65A641669052 (void);
@@ -48,10 +52,14 @@ extern void ObjectSpawner_EnsureFacingCamera_mDE91C9175F12CB11CDED0B3C82D5D68ED9
 extern void ObjectSpawner_RandomizeSpawnOption_mAAB168851C517000BFFEE2EB598D0DE478BB0FC7 (void);
 extern void ObjectSpawner_TrySpawnObject_mBE0345EF7F3D3EF69F20321A4190214DB09D65B1 (void);
 extern void ObjectSpawner__ctor_m1A51792399FE9484F9E6061BC6736BF2E561544C (void);
-static Il2CppMethodPointer s_methodPointers[36] = 
+static Il2CppMethodPointer s_methodPointers[40] = 
 {
 	ChangeScene_MoveToScene_mBF507DB36F89EDCAB1929C03591B00CB6419F001,
 	ChangeScene__ctor_m3E36D5BBE7C2716976E7E5865E0D82DF0EE0832C,
+	ChangeText_Start_m73D69C27CD7C03B6A728EDE4B2AD41954761A4E8,
+	ChangeText_OnPointerEnter_mB75AE1CB3641386AFF71D9A736DD686D8CC6E29E,
+	ChangeText_OnPointerExit_mD0259E4DA6A6DC85CB5388C111C5DA0A71E92CB7,
+	ChangeText__ctor_mB4CFD9B312C40C423FD553B93F70FC9B82ED5DBF,
 	NavBar_deactivatePanel_m80A53D4C68669F8970D31214B5040204B9435E35,
 	NavBar__ctor_mA6C97473CC36F4876CD15F03BE95667D02C4AA0E,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m379D45294C561A6E22B6F4EC0E6C65A641669052,
@@ -87,50 +95,54 @@ static Il2CppMethodPointer s_methodPointers[36] =
 	ObjectSpawner_TrySpawnObject_mBE0345EF7F3D3EF69F20321A4190214DB09D65B1,
 	ObjectSpawner__ctor_m1A51792399FE9484F9E6061BC6736BF2E561544C,
 };
-static const int32_t s_InvokerIndices[36] = 
+static const int32_t s_InvokerIndices[40] = 
 {
-	7166,
-	9229,
-	7216,
-	9229,
-	14365,
-	9229,
-	9146,
-	7274,
-	9229,
-	9229,
-	9082,
-	7216,
-	9082,
-	7216,
-	9082,
-	7216,
-	9028,
-	7166,
-	8938,
-	8938,
-	7074,
-	9146,
-	7274,
-	8938,
-	7074,
-	9146,
-	7274,
-	8938,
-	7074,
-	7216,
-	7216,
-	9229,
-	9229,
-	9229,
-	2461,
-	9229,
+	7174,
+	9242,
+	9242,
+	7224,
+	7224,
+	9242,
+	7224,
+	9242,
+	14384,
+	9242,
+	9159,
+	7283,
+	9242,
+	9242,
+	9094,
+	7224,
+	9094,
+	7224,
+	9094,
+	7224,
+	9039,
+	7174,
+	8949,
+	8949,
+	7082,
+	9159,
+	7283,
+	8949,
+	7082,
+	9159,
+	7283,
+	8949,
+	7082,
+	7224,
+	7224,
+	9242,
+	9242,
+	9242,
+	2462,
+	9242,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_XR_Interaction_Toolkit_Samples_StarterAssets_CodeGenModule;
 const Il2CppCodeGenModule g_Unity_XR_Interaction_Toolkit_Samples_StarterAssets_CodeGenModule = 
 {
 	"Unity.XR.Interaction.Toolkit.Samples.StarterAssets.dll",
-	36,
+	40,
 	s_methodPointers,
 	0,
 	NULL,

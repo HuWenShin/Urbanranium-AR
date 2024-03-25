@@ -1,22 +1,43 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 using TMPro;
 
 public class GPSLocation : MonoBehaviour
 {
-    public TextMeshProUGUI GPSStatus;
+    //public TextMeshProUGUI GPSStatus;
     public TextMeshProUGUI latitudeValue;
     public TextMeshProUGUI longitudeValue;
-    public TextMeshProUGUI altitudeValue;
-    public TextMeshProUGUI horizontalAccuracyValue;
-    public TextMeshProUGUI timestampValue;
+    public TextMeshProUGUI userLocationAddress;
+
+
 
     // Variables of pipes
     public TextMeshProUGUI nearestPipeInfo; // Add this for displaying nearest pipe info
+    public TextMeshProUGUI nearestPipeAddress;
     public LoadVancouverSewers pipeLoader; // Reference to your PipeLoader script
     // Start is called before the first frame update
+
+    public TextMeshProUGUI distanceToPipeText; // Assign in the Inspector
+    public TextMeshProUGUI reachedPipe; // Assign in the Inspector
+
+    private LoadVancouverSewers.SewerPipe targetPipe = null; // This will store the nearest pipe found as the target
+    private bool isWithinRange = false; // True if within 50 meters of the target pipe
+
+    // Button to go to the camera scene
+    public Button goToCameraSceneButton;
+
+    // Button to see the pipe location in the map
+    public Button seePipeLocationButton;
+
+
+    // Target distance of the target pipe
+    public int targetDistance = 5000;
+
+
 
     // Pipe image
     public Image pipeImg;
@@ -31,6 +52,12 @@ public class GPSLocation : MonoBehaviour
         if (pipeImg != null) pipeImg.enabled = false;
         // Hide GIF at the start
         if (purpleWalkGIF != null) purpleWalkGIF.enabled = false;
+
+        if (goToCameraSceneButton != null) goToCameraSceneButton.gameObject.SetActive(false);
+
+        // Add click listener for the button
+        if (seePipeLocationButton != null)
+            seePipeLocationButton.onClick.AddListener(OnSeePipeLocationClicked);
     }
 
     public void StartGPS()
@@ -43,7 +70,8 @@ public class GPSLocation : MonoBehaviour
     {
         if (!Input.location.isEnabledByUser)
         {
-            GPSStatus.text = "Location service not enabled";
+            //GPSStatus.text = "Location service not enabled";
+            Debug.Log("Location service not enabled");
             yield break;
         }
 
@@ -60,14 +88,18 @@ public class GPSLocation : MonoBehaviour
         // Service didn't initialize in 20 seconds
         if (maxWait < 1)
         {
-            GPSStatus.text = "Timed out";
+            //GPSStatus.text = "Timed out";
+            Debug.Log("Timed out");
+
             yield break;
         }
 
         // Connection has failed
         if (Input.location.status == LocationServiceStatus.Failed)
         {
-            GPSStatus.text = "Unable to determine device location";
+            //GPSStatus.text = "Unable to determine device location";
+            Debug.Log("Unable to determine device location");
+
             yield break;
         }
         else
@@ -77,17 +109,17 @@ public class GPSLocation : MonoBehaviour
             //Input.location.Stop(); // Stop service if you no longer need it after fetching location
         }
     }
-    private void UpdateStatus(string status)
-    {
-        if (GPSStatus != null)
-        {
-            GPSStatus.text = status;
-        }
-        else
-        {
-            Debug.LogError("GPSStatus TextMeshProUGUI component not set in the inspector.");
-        }
-    }
+    //private void UpdateStatus(string status)
+    //{
+    //    if (GPSStatus != null)
+    //    {
+    //        GPSStatus.text = status;
+    //    }
+    //    else
+    //    {
+    //        Debug.LogError("GPSStatus TextMeshProUGUI component not set in the inspector.");
+    //    }
+    //}
 
     private void UpdateGPSData()
     {
@@ -104,7 +136,8 @@ public class GPSLocation : MonoBehaviour
         }
         else
         {
-            UpdateStatus("Location service stopped");
+            //UpdateStatus("Location service stopped");
+            Debug.Log("Location service stopped");
         }
     }
 
@@ -115,15 +148,6 @@ public class GPSLocation : MonoBehaviour
 
         if (longitudeValue != null) longitudeValue.text = longitude;
         else Debug.LogError("longitudeValue TextMeshProUGUI component not set in the inspector.");
-
-        if (altitudeValue != null) altitudeValue.text = altitude;
-        else Debug.LogError("altitudeValue TextMeshProUGUI component not set in the inspector.");
-
-        if (horizontalAccuracyValue != null) horizontalAccuracyValue.text = horizontalAccuracy;
-        else Debug.LogError("horizontalAccuracyValue TextMeshProUGUI component not set in the inspector.");
-
-        if (timestampValue != null) timestampValue.text = timestamp;
-        else Debug.LogError("timestampValue TextMeshProUGUI component not set in the inspector.");
     }
 
 
@@ -138,49 +162,27 @@ public class GPSLocation : MonoBehaviour
     // Find nearest pipe
     private LoadVancouverSewers.SewerPipe FindNearestPipe(Vector2 userLocation, List<LoadVancouverSewers.SewerPipe> pipes)
     {
-        int counter = 0;
-        //LoadVancouverSewers.SewerPipe nearestPipe = null;
-        //float smallestDistance = float.MaxValue;
-
-        //Debug.Log($"There are " + pipes.Count + " pipes in this area");
-
-        //foreach (var pipe in pipes)
-        //{
-        //    // Assuming geo_point_2d contains the latitude and longitude
-        //    Vector2 pipeLocation = new Vector2((float)pipe.geo_point_2d.lon, (float)pipe.geo_point_2d.lat);
-        //    float distance = Vector2.Distance(userLocation, pipeLocation);
-
-        //    if (distance < smallestDistance)
-        //    {
-        //        smallestDistance = distance;
-        //        nearestPipe = pipe;
-        //        Debug.Log($"Nearest pipe changed with smallest distance" + distance);
-        //    }
-        //}
-
+        //int counter = 0;
         LoadVancouverSewers.SewerPipe nearestPipe = null;
-        float smallestDifferenceSum = float.MaxValue; // Initialize with max value
+        float smallestDistance = float.MaxValue;
+
+        Debug.Log($"There are " + pipes.Count + " pipes in this area");
 
         foreach (var pipe in pipes)
         {
-            Vector2 pipeLocation = new Vector2((float)pipe.geo_point_2d.lon, (float)pipe.geo_point_2d.lat);
-            // Calculate the sum of the absolute differences in lat and lon
-            float differenceSum = Mathf.Abs(userLocation.x - pipeLocation.y) + Mathf.Abs(userLocation.y - pipeLocation.x);
+            // Assuming geo_point_2d contains the latitude and longitude
+            Vector2 pipeLocation = new Vector2((float)pipe.geo_point_2d.lat, (float)pipe.geo_point_2d.lon);
+            float distance = Vector2.Distance(userLocation, pipeLocation);
 
-            if (differenceSum < smallestDifferenceSum)
+            if (distance < smallestDistance)
             {
-                Debug.Log("User location: " + userLocation.x + " " + userLocation.y);
-                Debug.Log("Pipe location: " + pipeLocation.x + " " + pipeLocation.y);
-
-                smallestDifferenceSum = differenceSum;
-                nearestPipe = pipe; // Update nearest pipe
-
-                Debug.Log($"Nearest pipe updated to location " + nearestPipe.geo_point_2d + " with distance of " + smallestDifferenceSum);
+                smallestDistance = distance;
+                nearestPipe = pipe;
+                //Debug.Log($"Nearest pipe changed with smallest distance" + distance);
             }
-            counter += 1;
         }
 
-        Debug.Log($"Looped " + counter + " times");
+        targetPipe = nearestPipe;
 
         return nearestPipe;
     }
@@ -210,8 +212,8 @@ public class GPSLocation : MonoBehaviour
     // Button click method
     public void OnUpdateLocationClicked()
     {
-        //StartCoroutine(UpdateLocationAndFindNearestPipe());
-        StartCoroutine(UpdateLocationAndFindtargetPipe());
+        StartCoroutine(UpdateLocationAndFindNearestPipe());
+        //StartCoroutine(UpdateLocationAndFindtargetPipe());
     }
 
     private IEnumerator UpdateLocationAndFindtargetPipe()
@@ -287,11 +289,51 @@ public class GPSLocation : MonoBehaviour
             Vector2 userLocation = new Vector2(Input.location.lastData.latitude, Input.location.lastData.longitude);
             LoadVancouverSewers.SewerPipe nearestPipe = FindNearestPipe(userLocation, pipeLoader.pipes);
 
+            float userLat = Input.location.lastData.latitude;
+            float userLon = Input.location.lastData.longitude;
+
+
+            StartCoroutine(GetAddressFromCoordinates(userLat, userLon, address =>
+            {
+                userLocationAddress.text = $"Your Address: {address}";
+            }));
+
+
             if (nearestPipe != null)
             {
+                // Set the nearest pipe information in PipeDataHolder
+                PipeDataHolder.Instance.Diameter = nearestPipe.diameter_mm;
+                PipeDataHolder.Instance.YearOfInstallation = nearestPipe.install_yr;
+                PipeDataHolder.Instance.Material = nearestPipe.material;
+
+                Vector2 targetLocation = new Vector2((float)targetPipe.geo_point_2d.lat, (float)targetPipe.geo_point_2d.lon);
+                float distance = Vector2.Distance(userLocation, targetLocation) * 111000; // Convert degrees to meters approximately
+                distanceToPipeText.text = $"Distance to Target Pipe: {distance} meters";
+                isWithinRange = distance <= targetDistance;
+
+                if (isWithinRange)
+                {
+                    reachedPipe.text = "\nNice! You have reached the pipe! Clik on the top right button to see the pipe and Municipal using your camera!";
+                    if (goToCameraSceneButton != null) goToCameraSceneButton.gameObject.SetActive(true); // Show the button
+                }
+                else
+                {
+                    reachedPipe.text = "\nYou are not close enough to the pipe, try to get closer. Click on the button below to refresh your location.";
+                    if (goToCameraSceneButton != null) goToCameraSceneButton.gameObject.SetActive(false); // Hide the button
+                }
+
+                distanceToPipeText.text = $"Distance to Target Pipe: {distance} meters";
+
+                Vector2 pipeLocation = new Vector2((float)nearestPipe.geo_point_2d.lat, (float)nearestPipe.geo_point_2d.lon);
+                StartCoroutine(GetAddressFromCoordinates(pipeLocation.x, pipeLocation.y, address =>
+                {
+                    nearestPipeAddress.text = $"Address: {address}";
+                }));
+
+
                 // Display the nearest pipe information
-                nearestPipeInfo.text = "Finding nearest pipe:\n" + $"Nearest Pipe Location: {nearestPipe.geo_point_2d.lat}, {nearestPipe.geo_point_2d.lon}"
-                    + $"Diameter: {nearestPipe.diameter_mm} mm, " +
+                nearestPipeInfo.text = "Finding nearest pipe:\n" + $"Location: {String.Format("{0:0.#####}", nearestPipe.geo_point_2d.lat)}, {String.Format("{0:0.#####}", nearestPipe.geo_point_2d.lon)}\n"
+                    + $"Diameter: {nearestPipe.diameter_mm} mm, \n" +
                                        $"Material: {nearestPipe.material}, " +
                                        $"Installed: {nearestPipe.install_yr}";
 
@@ -313,66 +355,120 @@ public class GPSLocation : MonoBehaviour
     }
 
 
+    private void UpdateDistanceAndCheckProximity(Vector2 userLocation)
+    {
+        if (targetPipe != null)
+        {
+            Vector2 targetLocation = new Vector2((float)targetPipe.geo_point_2d.lat, (float)targetPipe.geo_point_2d.lon);
+            float distance = Vector2.Distance(userLocation, targetLocation) * 111000; // Convert degrees to meters approximately
+
+            distanceToPipeText.text = $"Distance to Target Pipe: {distance} meters";
+            isWithinRange = distance <= targetDistance;
+
+            if (isWithinRange)
+            {
+                reachedPipe.text = "\nNice! You have reached the pipe";
+                if (goToCameraSceneButton != null) goToCameraSceneButton.gameObject.SetActive(true); // Show the button
+            }
+            else
+            {
+                reachedPipe.text = "\nNot there yet, try to get closer";
+                if (goToCameraSceneButton != null) goToCameraSceneButton.gameObject.SetActive(false); // Hide the button
+            }
+        }
+    }
 
 
+    public void OnRefreshLocationClicked()
+    {
+        StartCoroutine(RefreshLocationAndDistance());
+    }
 
+    private IEnumerator RefreshLocationAndDistance()
+    {
+        yield return StartCoroutine(GPSloc());
 
-    // update gps data continously
-    //IEnumerator GPSloc()
+        if (Input.location.status == LocationServiceStatus.Running)
+        {
+            Vector2 userLocation = new Vector2(Input.location.lastData.latitude, Input.location.lastData.longitude);
+            UpdateDistanceAndCheckProximity(userLocation); // Call this to update the distance to the target pipe
+        }
+    }
+
+    //IEnumerator GetAddressFromCoordinates(float lat, float lon)
     //{
-    //    if (!Input.location.isEnabledByUser)
+    //    string url = $"https://nominatim.openstreetmap.org/reverse?format=json&lat={lat}&lon={lon}&zoom=18&addressdetails=1";
+
+    //    using (UnityWebRequest request = UnityWebRequest.Get(url))
     //    {
-    //        print("Location service not enabled");
-    //        yield break;
-    //    }
+    //        request.SetRequestHeader("User-Agent", "Your Unity Application");
+    //        yield return request.SendWebRequest();
 
+    //        if (request.result != UnityWebRequest.Result.Success)
+    //        {
+    //            Debug.LogError("Reverse geocoding failed: " + request.error);
+    //            userLocationAddress.text = "Failed to get address.";
+    //        }
+    //        else
+    //        {
+    //            // Successfully received the response
+    //            string responseText = request.downloadHandler.text;
+    //            Debug.Log("Geocoding response: " + responseText);
 
-    //    Input.location.Start();
+    //            // Simple parsing for demonstration purposes, assuming "display_name" is in the response
+    //            string addressMarker = "\"display_name\":\"";
+    //            int startIndex = responseText.IndexOf(addressMarker) + addressMarker.Length;
+    //            int endIndex = responseText.IndexOf("\"", startIndex);
+    //            string address = responseText.Substring(startIndex, endIndex - startIndex);
 
-    //    int maxWait = 5;
-    //    while (Input.location.status == LocationServiceStatus.Initializing && maxWait > 0)
-    //    {
-    //        yield return new WaitForSeconds(1);
-    //        maxWait--;
-    //    }
-
-    //    if (maxWait < 1)
-    //    {
-    //        GPSStatus.text = "Time out";
-    //        print("Waited too long");
-    //        yield break;
-    //    }
-
-    //    if (Input.location.status == LocationServiceStatus.Failed)
-    //    {
-    //        GPSStatus.text = "Unable to determine device location";
-    //        print("Connection failed");
-    //        yield break;
-
-    //    }
-    //    else
-    //    {
-    //        GPSStatus.text = "Running";
-    //        InvokeRepeating("UpdateGPSData", 0.5f, 1f);
+    //            // Update the UI with the address
+    //            userLocationAddress.text = $"Address: {address}";
+    //        }
     //    }
     //}
 
-    //private void UpdateGPSData()
-    //{
-    //    if (Input.location.status == LocationServiceStatus.Running)
-    //    {
-    //        GPSStatus.text = "Running";
-    //        latitudeValue.text = Input.location.lastData.latitude.ToString();
-    //        longitudeValue.text = Input.location.lastData.longitude.ToString();
-    //        altitudeValue.text = Input.location.lastData.altitude.ToString();
-    //        horizontalAccuracyValue.text = Input.location.lastData.horizontalAccuracy.ToString();
-    //        timestampValue.text = Input.location.lastData.timestamp.ToString();
+    IEnumerator GetAddressFromCoordinates(float lat, float lon, Action<string> callback)
+    {
+        string url = $"https://nominatim.openstreetmap.org/reverse?format=json&lat={lat}&lon={lon}&zoom=18&addressdetails=1";
 
-    //    }
-    //    else
-    //    {
-    //        GPSStatus.text = "Stop";
-    //    }
-    //}
+        using (UnityWebRequest request = UnityWebRequest.Get(url))
+        {
+            request.SetRequestHeader("User-Agent", "Your Unity Application");
+            yield return request.SendWebRequest();
 
+            if (request.result != UnityWebRequest.Result.Success)
+            {
+                Debug.LogError("Reverse geocoding failed: " + request.error);
+                callback?.Invoke("Failed to get address.");
+            }
+            else
+            {
+                string responseText = request.downloadHandler.text;
+                string addressMarker = "\"display_name\":\"";
+                int startIndex = responseText.IndexOf(addressMarker) + addressMarker.Length;
+                int endIndex = responseText.IndexOf("\"", startIndex);
+                string address = responseText.Substring(startIndex, endIndex - startIndex);
+
+                callback?.Invoke(address);
+            }
+        }
+    }
+
+
+    // Method to handle the button click
+    void OnSeePipeLocationClicked()
+    {
+        if (targetPipe != null)
+        {
+            // Construct the Google Maps URL with the pipe's location
+            string url = $"https://www.google.com/maps/search/?api=1&query={targetPipe.geo_point_2d.lat},{targetPipe.geo_point_2d.lon}";
+
+            // Open the URL in the default web browser
+            Application.OpenURL(url);
+        }
+        else
+        {
+            Debug.Log("No target pipe found. Please find a pipe first.");
+        }
+    }
 }

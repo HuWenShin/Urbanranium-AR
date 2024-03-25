@@ -29,6 +29,24 @@ extern void Touch_get_altitudeAngle_m26DEF010E2CDC23F4FADE8E49A986D557C07D391 (v
 extern void Touch_get_azimuthAngle_m2F11532183492E608922A2F9D9EC9AC31D34F490 (void);
 extern void Touch_get_radius_m5BC9C50DABBB17B07742BAFC6CC36A6736AE7960 (void);
 extern void Touch_get_radiusVariance_m6F54BE964B91C3B2F8FA2A483E1FDB644B282B21 (void);
+extern void LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863 (void);
+extern void LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2 (void);
+extern void LocationInfo_get_altitude_m3B4BE2F447F3599F5677DD72A86C3A1A801ABAE0 (void);
+extern void LocationInfo_get_horizontalAccuracy_m3178154DD5F4F72B8743665F33CCAE5BEC6296F4 (void);
+extern void LocationInfo_get_timestamp_mAD1095E60A61DF0FA66195AA06A0F801CF9BDC9F (void);
+extern void LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF (void);
+extern void LocationService_GetLocationStatus_m1BE18671C8A455141C877979259EB9BA546A9103 (void);
+extern void LocationService_GetLastLocation_m50BFC921ADF32DD69D00937B44131B0770D4F662 (void);
+extern void LocationService_SetDesiredAccuracy_m6F69C809996908CD95C17A6BD96D216667FD5B58 (void);
+extern void LocationService_SetDistanceFilter_m847B85271A56F9291337C79E6C80012F2BD6C1AE (void);
+extern void LocationService_StartUpdatingLocation_m93789B3CDDF62EBD26326127DEC65C6C94123D29 (void);
+extern void LocationService_get_isEnabledByUser_m78FE3A38B1101BAF658E259C1A6B4CD9A008DCAE (void);
+extern void LocationService_get_status_m25B7C4012B9529265D9746BB73ED689737E9C9CD (void);
+extern void LocationService_get_lastData_m50C68F3DFB23894CF519F00BBA9D72146EE9345F (void);
+extern void LocationService_Start_m5076FE201E96C086B0F9C2D8677DA69C98099F3D (void);
+extern void LocationService_Start_mC2A90619923D4BEB5F9B5CCD95F317B98D67AF3A (void);
+extern void LocationService__ctor_mCA7E0A5F2303FE28CE83787FEE9C5A020195E6DC (void);
+extern void LocationService_GetLastLocation_Injected_m2463D5B46B8E9CA2C10AB3E611CD176BE7C3D472 (void);
 extern void CameraRaycastHelper_RaycastTry_m79A654495BD2C09623E9067BCC70D23A0DA3BF58 (void);
 extern void CameraRaycastHelper_RaycastTry2D_m132832B9171CD030AD231A63BF70D1226ED1F373 (void);
 extern void CameraRaycastHelper_RaycastTry_Injected_m4A9EA285FB7B24B7B3D894E7EE997B41ED302DEF (void);
@@ -55,6 +73,7 @@ extern void Input_set_compositionCursorPos_m16A856BFBF1DAE42B0089696906F53033486
 extern void Input_get_mousePresent_mAD77FFD987CD5B998AFAD4DAECADBC76034026BF (void);
 extern void Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39 (void);
 extern void Input_get_touchSupported_m2A4FA398A793861AE1BC5971A1363552AB33BEEF (void);
+extern void Input_get_location_m1D1FA0938E5B83C46A666CE78D95A58B39164DB5 (void);
 extern void Input_CheckDisabled_m359B281F7F5DDAB74780E1898311AECD9B0ECCE1 (void);
 extern void Input_GetTouch_Injected_m04E25DD035583531339AB310FBDD4F5A30817F87 (void);
 extern void Input_GetLastPenContactEvent_Injected_mA7F2DE408F86C38FC15357E468645CD82D38A84A (void);
@@ -82,7 +101,7 @@ extern void InputUnsafeUtility_GetButton__Unmanaged_m270892EB7D8C88443200DF972F7
 extern void InputUnsafeUtility_GetButtonDown_mB35B46B92DA28196820B996E2420E5E320088EE4 (void);
 extern void InputUnsafeUtility_GetButtonDown__Unmanaged_m411E8743768382A33B3778E734AF072F8DBDECC4 (void);
 extern void InputUnsafeUtility_GetButtonUp__Unmanaged_mCCE34158CE05432541102B1C2AEC6545E25D0732 (void);
-static Il2CppMethodPointer s_methodPointers[70] = 
+static Il2CppMethodPointer s_methodPointers[89] = 
 {
 	Touch_get_fingerId_mC1DCE93BFA0574960A3AE5329AE6C5F7E06962BD,
 	Touch_get_position_m41B9EB0F3F3E1BE98CEB388253A9E31979CB964A,
@@ -101,6 +120,24 @@ static Il2CppMethodPointer s_methodPointers[70] =
 	Touch_get_azimuthAngle_m2F11532183492E608922A2F9D9EC9AC31D34F490,
 	Touch_get_radius_m5BC9C50DABBB17B07742BAFC6CC36A6736AE7960,
 	Touch_get_radiusVariance_m6F54BE964B91C3B2F8FA2A483E1FDB644B282B21,
+	LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863,
+	LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2,
+	LocationInfo_get_altitude_m3B4BE2F447F3599F5677DD72A86C3A1A801ABAE0,
+	LocationInfo_get_horizontalAccuracy_m3178154DD5F4F72B8743665F33CCAE5BEC6296F4,
+	LocationInfo_get_timestamp_mAD1095E60A61DF0FA66195AA06A0F801CF9BDC9F,
+	LocationService_IsServiceEnabledByUser_m88DF3FEBB0B816F0D90E4972630D95714E5DDEDF,
+	LocationService_GetLocationStatus_m1BE18671C8A455141C877979259EB9BA546A9103,
+	LocationService_GetLastLocation_m50BFC921ADF32DD69D00937B44131B0770D4F662,
+	LocationService_SetDesiredAccuracy_m6F69C809996908CD95C17A6BD96D216667FD5B58,
+	LocationService_SetDistanceFilter_m847B85271A56F9291337C79E6C80012F2BD6C1AE,
+	LocationService_StartUpdatingLocation_m93789B3CDDF62EBD26326127DEC65C6C94123D29,
+	LocationService_get_isEnabledByUser_m78FE3A38B1101BAF658E259C1A6B4CD9A008DCAE,
+	LocationService_get_status_m25B7C4012B9529265D9746BB73ED689737E9C9CD,
+	LocationService_get_lastData_m50C68F3DFB23894CF519F00BBA9D72146EE9345F,
+	LocationService_Start_m5076FE201E96C086B0F9C2D8677DA69C98099F3D,
+	LocationService_Start_mC2A90619923D4BEB5F9B5CCD95F317B98D67AF3A,
+	LocationService__ctor_mCA7E0A5F2303FE28CE83787FEE9C5A020195E6DC,
+	LocationService_GetLastLocation_Injected_m2463D5B46B8E9CA2C10AB3E611CD176BE7C3D472,
 	CameraRaycastHelper_RaycastTry_m79A654495BD2C09623E9067BCC70D23A0DA3BF58,
 	CameraRaycastHelper_RaycastTry2D_m132832B9171CD030AD231A63BF70D1226ED1F373,
 	CameraRaycastHelper_RaycastTry_Injected_m4A9EA285FB7B24B7B3D894E7EE997B41ED302DEF,
@@ -127,6 +164,7 @@ static Il2CppMethodPointer s_methodPointers[70] =
 	Input_get_mousePresent_mAD77FFD987CD5B998AFAD4DAECADBC76034026BF,
 	Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39,
 	Input_get_touchSupported_m2A4FA398A793861AE1BC5971A1363552AB33BEEF,
+	Input_get_location_m1D1FA0938E5B83C46A666CE78D95A58B39164DB5,
 	Input_CheckDisabled_m359B281F7F5DDAB74780E1898311AECD9B0ECCE1,
 	Input_GetTouch_Injected_m04E25DD035583531339AB310FBDD4F5A30817F87,
 	Input_GetLastPenContactEvent_Injected_mA7F2DE408F86C38FC15357E468645CD82D38A84A,
@@ -172,8 +210,13 @@ extern void Touch_get_altitudeAngle_m26DEF010E2CDC23F4FADE8E49A986D557C07D391_Ad
 extern void Touch_get_azimuthAngle_m2F11532183492E608922A2F9D9EC9AC31D34F490_AdjustorThunk (void);
 extern void Touch_get_radius_m5BC9C50DABBB17B07742BAFC6CC36A6736AE7960_AdjustorThunk (void);
 extern void Touch_get_radiusVariance_m6F54BE964B91C3B2F8FA2A483E1FDB644B282B21_AdjustorThunk (void);
+extern void LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863_AdjustorThunk (void);
+extern void LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2_AdjustorThunk (void);
+extern void LocationInfo_get_altitude_m3B4BE2F447F3599F5677DD72A86C3A1A801ABAE0_AdjustorThunk (void);
+extern void LocationInfo_get_horizontalAccuracy_m3178154DD5F4F72B8743665F33CCAE5BEC6296F4_AdjustorThunk (void);
+extern void LocationInfo_get_timestamp_mAD1095E60A61DF0FA66195AA06A0F801CF9BDC9F_AdjustorThunk (void);
 extern void HitInfo_SendMessage_m7834418ACE250BBCBA38ADCF0892E475BD1AD541_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[18] = 
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[23] = 
 {
 	{ 0x06000001, Touch_get_fingerId_mC1DCE93BFA0574960A3AE5329AE6C5F7E06962BD_AdjustorThunk },
 	{ 0x06000002, Touch_get_position_m41B9EB0F3F3E1BE98CEB388253A9E31979CB964A_AdjustorThunk },
@@ -192,88 +235,112 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[18] =
 	{ 0x0600000F, Touch_get_azimuthAngle_m2F11532183492E608922A2F9D9EC9AC31D34F490_AdjustorThunk },
 	{ 0x06000010, Touch_get_radius_m5BC9C50DABBB17B07742BAFC6CC36A6736AE7960_AdjustorThunk },
 	{ 0x06000011, Touch_get_radiusVariance_m6F54BE964B91C3B2F8FA2A483E1FDB644B282B21_AdjustorThunk },
-	{ 0x06000038, HitInfo_SendMessage_m7834418ACE250BBCBA38ADCF0892E475BD1AD541_AdjustorThunk },
+	{ 0x06000012, LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863_AdjustorThunk },
+	{ 0x06000013, LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2_AdjustorThunk },
+	{ 0x06000014, LocationInfo_get_altitude_m3B4BE2F447F3599F5677DD72A86C3A1A801ABAE0_AdjustorThunk },
+	{ 0x06000015, LocationInfo_get_horizontalAccuracy_m3178154DD5F4F72B8743665F33CCAE5BEC6296F4_AdjustorThunk },
+	{ 0x06000016, LocationInfo_get_timestamp_mAD1095E60A61DF0FA66195AA06A0F801CF9BDC9F_AdjustorThunk },
+	{ 0x0600004B, HitInfo_SendMessage_m7834418ACE250BBCBA38ADCF0892E475BD1AD541_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[70] = 
+static const int32_t s_InvokerIndices[89] = 
 {
-	9028,
-	9216,
-	7343,
-	9216,
-	7343,
-	9216,
-	7343,
-	9146,
-	9028,
-	9028,
-	9146,
-	9146,
-	9028,
-	9146,
-	9146,
-	9146,
-	9146,
-	10781,
-	10781,
-	10762,
-	10762,
-	13907,
-	13907,
-	13485,
-	13485,
-	13482,
-	13482,
-	13482,
-	14271,
-	13946,
-	14273,
-	14331,
-	14231,
-	14328,
-	14326,
-	14259,
-	14053,
-	14271,
-	14326,
-	14069,
-	14231,
-	14259,
-	14231,
-	14231,
-	12986,
-	14043,
-	14043,
-	14043,
-	14043,
-	14043,
-	14331,
-	14331,
-	14053,
-	12995,
-	14331,
-	7216,
-	13508,
-	12385,
-	12155,
-	12155,
-	12155,
-	13907,
-	12669,
-	13907,
-	12669,
-	13485,
-	12155,
-	13485,
-	12155,
-	12155,
+	9039,
+	9229,
+	7352,
+	9229,
+	7352,
+	9229,
+	7352,
+	9159,
+	9039,
+	9039,
+	9159,
+	9159,
+	9039,
+	9159,
+	9159,
+	9159,
+	9159,
+	9159,
+	9159,
+	9159,
+	9159,
+	8979,
+	14249,
+	14277,
+	14283,
+	14083,
+	14083,
+	14350,
+	8949,
+	9039,
+	9064,
+	3978,
+	9242,
+	9242,
+	14061,
+	10796,
+	10796,
+	10777,
+	10777,
+	13925,
+	13925,
+	13503,
+	13503,
+	13500,
+	13500,
+	13500,
+	14290,
+	13964,
+	14292,
+	14350,
+	14249,
+	14347,
+	14345,
+	14277,
+	14071,
+	14290,
+	14345,
+	14087,
+	14249,
+	14277,
+	14249,
+	14290,
+	14249,
+	13004,
+	14061,
+	14061,
+	14061,
+	14061,
+	14061,
+	14350,
+	14350,
+	14071,
+	13013,
+	14350,
+	7224,
+	13526,
+	12402,
+	12172,
+	12172,
+	12172,
+	13925,
+	12687,
+	13925,
+	12687,
+	13503,
+	12172,
+	13503,
+	12172,
+	12172,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_InputLegacyModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_InputLegacyModule_CodeGenModule = 
 {
 	"UnityEngine.InputLegacyModule.dll",
-	70,
+	89,
 	s_methodPointers,
-	18,
+	23,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,
