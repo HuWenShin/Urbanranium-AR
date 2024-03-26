@@ -88,6 +88,9 @@ extern void SceneChange_ChangetoM2_PreGPSScene_m231849530C3AB55C1471A14127B59F54
 extern void SceneChange_ChangetoM2_GPSScene_mC617E032C4668D3F4028766F2702EF091B1887EA (void);
 extern void SceneChange_ChangetoM2_SeePipeInCameraScene_m823A7C8733AFA0FC404424E124FDE017CC4832A9 (void);
 extern void SceneChange__ctor_m4BEE4E939472EAB59441D14F2324EEE353793A1B (void);
+extern void ChangeTextColor_Start_mB069CA1780A0395049D5CA5154736B18B038961C (void);
+extern void ChangeTextColor_ChangeButtonTextColor_m115BAD5809BBA7014453021C14B52CAA458878F4 (void);
+extern void ChangeTextColor__ctor_m01384EFE332B8FB1EF2129F5CD11F71EC0266527 (void);
 extern void UseCamera_Start_mE483BA870CCF5A55E41D814B18B5965A86D728F0 (void);
 extern void UseCamera_Update_m90F9619E9C503A9CCE3A6D19DB0DAA8FA4450C74 (void);
 extern void UseCamera__ctor_m506D03A06A4943B140F0D4C1428160412FDC4B22 (void);
@@ -185,7 +188,7 @@ extern void ARFeatheredPlaneMeshVisualizerCompanion_OnDestroy_m64B601920050D7584
 extern void ARFeatheredPlaneMeshVisualizerCompanion_Update_m541F58E1FC27F7D775FE47F2C1B1A04710BC4A27 (void);
 extern void ARFeatheredPlaneMeshVisualizerCompanion_set_visualizeSurfaces_m7A7F198C97A315F6F7F58F0BDA5269863F098D68 (void);
 extern void ARFeatheredPlaneMeshVisualizerCompanion__ctor_m3871FAD2A1135D983A9B5ADCD604F22949DE985C (void);
-static Il2CppMethodPointer s_methodPointers[173] = 
+static Il2CppMethodPointer s_methodPointers[176] = 
 {
 	DisplayPipeInfo_Start_mA58FE34C351AC47CC7F79B310B2F107C4DFB2FD6,
 	DisplayPipeInfo_Update_mB87DDC73FE438D19654CBB6C04CFC6BD4B54DFA1,
@@ -263,6 +266,9 @@ static Il2CppMethodPointer s_methodPointers[173] =
 	SceneChange_ChangetoM2_GPSScene_mC617E032C4668D3F4028766F2702EF091B1887EA,
 	SceneChange_ChangetoM2_SeePipeInCameraScene_m823A7C8733AFA0FC404424E124FDE017CC4832A9,
 	SceneChange__ctor_m4BEE4E939472EAB59441D14F2324EEE353793A1B,
+	ChangeTextColor_Start_mB069CA1780A0395049D5CA5154736B18B038961C,
+	ChangeTextColor_ChangeButtonTextColor_m115BAD5809BBA7014453021C14B52CAA458878F4,
+	ChangeTextColor__ctor_m01384EFE332B8FB1EF2129F5CD11F71EC0266527,
 	UseCamera_Start_mE483BA870CCF5A55E41D814B18B5965A86D728F0,
 	UseCamera_Update_m90F9619E9C503A9CCE3A6D19DB0DAA8FA4450C74,
 	UseCamera__ctor_m506D03A06A4943B140F0D4C1428160412FDC4B22,
@@ -364,9 +370,9 @@ static Il2CppMethodPointer s_methodPointers[173] =
 extern void Goal__ctor_m1545B6E40E910D8B0648797BF96520F84FF2FF40_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] = 
 {
-	{ 0x0600007E, Goal__ctor_m1545B6E40E910D8B0648797BF96520F84FF2FF40_AdjustorThunk },
+	{ 0x06000081, Goal__ctor_m1545B6E40E910D8B0648797BF96520F84FF2FF40_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[173] = 
+static const int32_t s_InvokerIndices[176] = 
 {
 	9242,
 	9242,
@@ -443,6 +449,9 @@ static const int32_t s_InvokerIndices[173] =
 	9242,
 	9242,
 	9242,
+	9242,
+	9242,
+	7086,
 	9242,
 	9242,
 	9242,
@@ -546,7 +555,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	173,
+	176,
 	s_methodPointers,
 	1,
 	s_adjustorThunks,
