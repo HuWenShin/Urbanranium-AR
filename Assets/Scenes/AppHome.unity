@@ -560,7 +560,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185321372}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -988,6 +988,7 @@ GameObject:
   - component: {fileID: 381428771}
   - component: {fileID: 381428776}
   - component: {fileID: 381428775}
+  - component: {fileID: 381428777}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1120,6 +1121,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381428770}
   m_CullTransparentMesh: 1
+--- !u!114 &381428777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381428770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f0b11cf0ebdb49f3a223d0d2d81bacd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &383170955
 GameObject:
   m_ObjectHideFlags: 0
@@ -2434,6 +2447,26 @@ PrefabInstance:
         type: 3}
       propertyPath: ModuleName
       value: Module 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894369745010859188, guid: 64510f8391dbe44df985af8473c5c83c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894369745010859188, guid: 64510f8391dbe44df985af8473c5c83c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 381428777}
+    - target: {fileID: 4894369745010859188, guid: 64510f8391dbe44df985af8473c5c83c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangetoM2_PreVideo1Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894369745010859188, guid: 64510f8391dbe44df985af8473c5c83c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChange, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4894369745010859188, guid: 64510f8391dbe44df985af8473c5c83c,
         type: 3}

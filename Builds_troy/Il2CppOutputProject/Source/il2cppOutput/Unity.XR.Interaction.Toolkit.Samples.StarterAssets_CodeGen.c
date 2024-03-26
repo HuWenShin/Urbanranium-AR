@@ -1,0 +1,161 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void ChangeScene_MoveToScene_mBF507DB36F89EDCAB1929C03591B00CB6419F001 (void);
+extern void ChangeScene__ctor_m3E36D5BBE7C2716976E7E5865E0D82DF0EE0832C (void);
+extern void ChangeText_Start_m73D69C27CD7C03B6A728EDE4B2AD41954761A4E8 (void);
+extern void ChangeText_OnPointerEnter_mB75AE1CB3641386AFF71D9A736DD686D8CC6E29E (void);
+extern void ChangeText_OnPointerExit_mD0259E4DA6A6DC85CB5388C111C5DA0A71E92CB7 (void);
+extern void ChangeText__ctor_mB4CFD9B312C40C423FD553B93F70FC9B82ED5DBF (void);
+extern void NavBar_deactivatePanel_m80A53D4C68669F8970D31214B5040204B9435E35 (void);
+extern void NavBar__ctor_mA6C97473CC36F4876CD15F03BE95667D02C4AA0E (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m379D45294C561A6E22B6F4EC0E6C65A641669052 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m311E3588D507C8044943F51C544BF0D4E06473E8 (void);
+extern void DestroySelf_get_lifetime_m3AB080F878918FDBF5C39438374FBDDCD9E22458 (void);
+extern void DestroySelf_set_lifetime_mCB3CE0FF94854B5CB42D3C4E93C7783410123F3C (void);
+extern void DestroySelf_Start_mDA06F1CBD548235D9376E609CD54DDD7AD50AFCB (void);
+extern void DestroySelf__ctor_mE6AE809A5A18196F03764F925582D12C3AD8523F (void);
+extern void ObjectSpawner_get_cameraToFace_m99ED804DC1AEAFF1FA3BE5D9CB96E15C17A907B8 (void);
+extern void ObjectSpawner_set_cameraToFace_m13429AE345196ACC129BFC53BA7DEEC6627F445C (void);
+extern void ObjectSpawner_get_objectPrefabs_mC013B08B69C29F13A750E8715FAB01E8681320CF (void);
+extern void ObjectSpawner_set_objectPrefabs_m7C706F87CB6076934AA85A8DC02C11C94DBC2DE3 (void);
+extern void ObjectSpawner_get_spawnVisualizationPrefab_m005CB7E8829438D62559966C3175138AF6B8E7E2 (void);
+extern void ObjectSpawner_set_spawnVisualizationPrefab_mD4A5C8D799FCC9B21228E6055795C373AC896842 (void);
+extern void ObjectSpawner_get_spawnOptionIndex_m8B127FEF82FD7AAB77E7D4F6EE3E869E25EFB254 (void);
+extern void ObjectSpawner_set_spawnOptionIndex_m5984E7B1712BB73A2E982FE4487FCA033A922711 (void);
+extern void ObjectSpawner_get_isSpawnOptionRandomized_m332805694C4805511AD6D8124E6038E3A5D59C2B (void);
+extern void ObjectSpawner_get_onlySpawnInView_m4AE6CAF69146EE5F55128F520ED6C77FBF33B376 (void);
+extern void ObjectSpawner_set_onlySpawnInView_m39467C97467506B3012A050F3849BC896ECFE07A (void);
+extern void ObjectSpawner_get_viewportPeriphery_m9D81A0039316F881F4F12D8F42E67ED86907DF8E (void);
+extern void ObjectSpawner_set_viewportPeriphery_mF79358BA74C413586E09E1DD628FC9A36EA948BA (void);
+extern void ObjectSpawner_get_applyRandomAngleAtSpawn_mEEF19E6B8A0232670426D51CE44AFD5C7D721289 (void);
+extern void ObjectSpawner_set_applyRandomAngleAtSpawn_m249E985B18D47F1280DA892475C0F8A743A172C8 (void);
+extern void ObjectSpawner_get_spawnAngleRange_mA5AB99C204A4669D2805081FF2B27F2C6CFB97B6 (void);
+extern void ObjectSpawner_set_spawnAngleRange_m5CA22E8E5559EAE3CAFED5E7E5D114DFD5E22EFE (void);
+extern void ObjectSpawner_get_spawnAsChildren_m4498447AB9BD7DA4F8B6B31E2C8FF0F3A25D6483 (void);
+extern void ObjectSpawner_set_spawnAsChildren_mF600D54942D35CF9B9BF4A6F8D53843AC65EDD32 (void);
+extern void ObjectSpawner_add_objectSpawned_m6283F4141293DABF487C47EE6D77A54E4A7C1808 (void);
+extern void ObjectSpawner_remove_objectSpawned_mE95E288198D756A164416D64782A9468099DE0B5 (void);
+extern void ObjectSpawner_Awake_mCFDE2E8399B486248DD536633294AC9627F1B9A8 (void);
+extern void ObjectSpawner_EnsureFacingCamera_mDE91C9175F12CB11CDED0B3C82D5D68ED9CAB7B5 (void);
+extern void ObjectSpawner_RandomizeSpawnOption_mAAB168851C517000BFFEE2EB598D0DE478BB0FC7 (void);
+extern void ObjectSpawner_TrySpawnObject_mBE0345EF7F3D3EF69F20321A4190214DB09D65B1 (void);
+extern void ObjectSpawner__ctor_m1A51792399FE9484F9E6061BC6736BF2E561544C (void);
+static Il2CppMethodPointer s_methodPointers[40] = 
+{
+	ChangeScene_MoveToScene_mBF507DB36F89EDCAB1929C03591B00CB6419F001,
+	ChangeScene__ctor_m3E36D5BBE7C2716976E7E5865E0D82DF0EE0832C,
+	ChangeText_Start_m73D69C27CD7C03B6A728EDE4B2AD41954761A4E8,
+	ChangeText_OnPointerEnter_mB75AE1CB3641386AFF71D9A736DD686D8CC6E29E,
+	ChangeText_OnPointerExit_mD0259E4DA6A6DC85CB5388C111C5DA0A71E92CB7,
+	ChangeText__ctor_mB4CFD9B312C40C423FD553B93F70FC9B82ED5DBF,
+	NavBar_deactivatePanel_m80A53D4C68669F8970D31214B5040204B9435E35,
+	NavBar__ctor_mA6C97473CC36F4876CD15F03BE95667D02C4AA0E,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m379D45294C561A6E22B6F4EC0E6C65A641669052,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m311E3588D507C8044943F51C544BF0D4E06473E8,
+	DestroySelf_get_lifetime_m3AB080F878918FDBF5C39438374FBDDCD9E22458,
+	DestroySelf_set_lifetime_mCB3CE0FF94854B5CB42D3C4E93C7783410123F3C,
+	DestroySelf_Start_mDA06F1CBD548235D9376E609CD54DDD7AD50AFCB,
+	DestroySelf__ctor_mE6AE809A5A18196F03764F925582D12C3AD8523F,
+	ObjectSpawner_get_cameraToFace_m99ED804DC1AEAFF1FA3BE5D9CB96E15C17A907B8,
+	ObjectSpawner_set_cameraToFace_m13429AE345196ACC129BFC53BA7DEEC6627F445C,
+	ObjectSpawner_get_objectPrefabs_mC013B08B69C29F13A750E8715FAB01E8681320CF,
+	ObjectSpawner_set_objectPrefabs_m7C706F87CB6076934AA85A8DC02C11C94DBC2DE3,
+	ObjectSpawner_get_spawnVisualizationPrefab_m005CB7E8829438D62559966C3175138AF6B8E7E2,
+	ObjectSpawner_set_spawnVisualizationPrefab_mD4A5C8D799FCC9B21228E6055795C373AC896842,
+	ObjectSpawner_get_spawnOptionIndex_m8B127FEF82FD7AAB77E7D4F6EE3E869E25EFB254,
+	ObjectSpawner_set_spawnOptionIndex_m5984E7B1712BB73A2E982FE4487FCA033A922711,
+	ObjectSpawner_get_isSpawnOptionRandomized_m332805694C4805511AD6D8124E6038E3A5D59C2B,
+	ObjectSpawner_get_onlySpawnInView_m4AE6CAF69146EE5F55128F520ED6C77FBF33B376,
+	ObjectSpawner_set_onlySpawnInView_m39467C97467506B3012A050F3849BC896ECFE07A,
+	ObjectSpawner_get_viewportPeriphery_m9D81A0039316F881F4F12D8F42E67ED86907DF8E,
+	ObjectSpawner_set_viewportPeriphery_mF79358BA74C413586E09E1DD628FC9A36EA948BA,
+	ObjectSpawner_get_applyRandomAngleAtSpawn_mEEF19E6B8A0232670426D51CE44AFD5C7D721289,
+	ObjectSpawner_set_applyRandomAngleAtSpawn_m249E985B18D47F1280DA892475C0F8A743A172C8,
+	ObjectSpawner_get_spawnAngleRange_mA5AB99C204A4669D2805081FF2B27F2C6CFB97B6,
+	ObjectSpawner_set_spawnAngleRange_m5CA22E8E5559EAE3CAFED5E7E5D114DFD5E22EFE,
+	ObjectSpawner_get_spawnAsChildren_m4498447AB9BD7DA4F8B6B31E2C8FF0F3A25D6483,
+	ObjectSpawner_set_spawnAsChildren_mF600D54942D35CF9B9BF4A6F8D53843AC65EDD32,
+	ObjectSpawner_add_objectSpawned_m6283F4141293DABF487C47EE6D77A54E4A7C1808,
+	ObjectSpawner_remove_objectSpawned_mE95E288198D756A164416D64782A9468099DE0B5,
+	ObjectSpawner_Awake_mCFDE2E8399B486248DD536633294AC9627F1B9A8,
+	ObjectSpawner_EnsureFacingCamera_mDE91C9175F12CB11CDED0B3C82D5D68ED9CAB7B5,
+	ObjectSpawner_RandomizeSpawnOption_mAAB168851C517000BFFEE2EB598D0DE478BB0FC7,
+	ObjectSpawner_TrySpawnObject_mBE0345EF7F3D3EF69F20321A4190214DB09D65B1,
+	ObjectSpawner__ctor_m1A51792399FE9484F9E6061BC6736BF2E561544C,
+};
+static const int32_t s_InvokerIndices[40] = 
+{
+	7174,
+	9242,
+	9242,
+	7224,
+	7224,
+	9242,
+	7224,
+	9242,
+	14384,
+	9242,
+	9159,
+	7283,
+	9242,
+	9242,
+	9094,
+	7224,
+	9094,
+	7224,
+	9094,
+	7224,
+	9039,
+	7174,
+	8949,
+	8949,
+	7082,
+	9159,
+	7283,
+	8949,
+	7082,
+	9159,
+	7283,
+	8949,
+	7082,
+	7224,
+	7224,
+	9242,
+	9242,
+	9242,
+	2462,
+	9242,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_XR_Interaction_Toolkit_Samples_StarterAssets_CodeGenModule;
+const Il2CppCodeGenModule g_Unity_XR_Interaction_Toolkit_Samples_StarterAssets_CodeGenModule = 
+{
+	"Unity.XR.Interaction.Toolkit.Samples.StarterAssets.dll",
+	40,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

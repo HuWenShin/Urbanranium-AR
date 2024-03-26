@@ -163,7 +163,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.unity.template.ar_mobile
     Standalone: com.unity.template.ar-mobile
-    iPhone: com.unity.template.armobile
+    iPhone: com.unity.template.armobile-2
   buildNumber:
     Bratwurst: 0
     Standalone: 0
@@ -548,8 +548,8 @@ PlayerSettings:
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
   cameraUsageDescription: AR Camera
-  locationUsageDescription: AR app geolocation
-  microphoneUsageDescription: 
+  locationUsageDescription: AR
+  microphoneUsageDescription: AR
   bluetoothUsageDescription: 
   macOSTargetOSVersion: 10.13.0
   switchNMETAOverride: 
@@ -906,7 +906,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 0910dbbb-8281-45d9-b2bb-81e91e0adb7f
   framebufferDepthMemorylessMode: 0
