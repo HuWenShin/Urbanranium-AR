@@ -730,7 +730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 95329953cb7a04314b79fab286ad0f8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cbbe8ec0008a43a98b9c62a9b05fc00, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1955,7 +1955,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 29dd6e444a4054f17a3d07c04e781f8e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d8fc382a2f9f647188f0676b83792718, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2191,7 +2191,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d28f361dbb3d349f39fe7f711da72f9b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d826a1cb863ab4d22863bec2b8a1f409, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2221,7 +2221,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbea9206736064135a82669761bb4550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelToOpen: {fileID: 0}
+  panelA: {fileID: 0}
+  panelB: {fileID: 0}
+  panelC: {fileID: 0}
 --- !u!1001 &243769177278633042
 PrefabInstance:
   m_ObjectHideFlags: 0
