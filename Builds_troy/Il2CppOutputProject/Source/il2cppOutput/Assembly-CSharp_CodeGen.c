@@ -19,7 +19,6 @@ extern void GPSLocation_Start_mC9C054DE9C4106B532C5B0F962D241B00F595597 (void);
 extern void GPSLocation_StartGPS_mAF0FAC05E140BC65DBDFA6472E0A31A52E581515 (void);
 extern void GPSLocation_GPSloc_mA5F5FC191FCC9DFEFF4896A91F71DE6C3F90DDCC (void);
 extern void GPSLocation_UpdateGPSData_mBC09D5BCEF8BB4DE1580C6D092E47CE207E0E53C (void);
-extern void GPSLocation_UpdateTextFields_m91C5F8A24E9DCEB96B936AEA5152271E5F8C7C93 (void);
 extern void GPSLocation_Update_mF2B1E3893A3195058A83C6F9186133CD16ED1032 (void);
 extern void GPSLocation_FindNearestPipe_m0EEC940A7DB0D6B2C6E4ED60EF3CC528C931B8A3 (void);
 extern void GPSLocation_findTargetPipe_mAEB4453405109B7A2F6782B65F6EB16252A6EC0D (void);
@@ -32,39 +31,41 @@ extern void GPSLocation_RefreshLocationAndDistance_m930AA2FDF88807FE0F27C22377E7
 extern void GPSLocation_GetAddressFromCoordinates_m0EBEA120D6B2CDB7780F8218D0F3A36136158786 (void);
 extern void GPSLocation_OnSeePipeLocationClicked_m018E8812D48FB8067EAF1577ABACEC9816785CF9 (void);
 extern void GPSLocation__ctor_m638B90C04165C58577979CED0734DA5CC84584B4 (void);
-extern void GPSLocation_U3CUpdateLocationAndFindNearestPipeU3Eb__28_0_m3F1F966F15900B5970C180DB2283EA13D01205A1 (void);
-extern void GPSLocation_U3CUpdateLocationAndFindNearestPipeU3Eb__28_1_mBB3C1C96C016A656DEECA15D76BEA5023F0BCB74 (void);
-extern void U3CGPSlocU3Ed__17__ctor_m8D0AEE0CC7FEACF7DA75ECDC85F9F0099CCFE698 (void);
-extern void U3CGPSlocU3Ed__17_System_IDisposable_Dispose_mFAE594864C127E33DA1E7B8A584CEBBDB414AE39 (void);
-extern void U3CGPSlocU3Ed__17_MoveNext_m0DC458559937220A3EB0E929CCD0C9FF1C357149 (void);
-extern void U3CGPSlocU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6BD1F1D66E6E5C09378F2B575F405A33C00FC68F (void);
-extern void U3CGPSlocU3Ed__17_System_Collections_IEnumerator_Reset_m37186DE7C654AE0FD17C05358C45517F22F6F939 (void);
-extern void U3CGPSlocU3Ed__17_System_Collections_IEnumerator_get_Current_m7DAF8DD48B8C2A54C0B9493AEBC7597450E40168 (void);
-extern void U3CGetAddressFromCoordinatesU3Ed__32__ctor_m0EF6BF23C4EC85953423347A4C0FCFC9C77B73C7 (void);
-extern void U3CGetAddressFromCoordinatesU3Ed__32_System_IDisposable_Dispose_m2C4BDF4F4ACCC6E94A5EE21FE2867DCD48D00538 (void);
-extern void U3CGetAddressFromCoordinatesU3Ed__32_MoveNext_mF94C3A57606B125930E974415A22FC3FA6F8FA7D (void);
-extern void U3CGetAddressFromCoordinatesU3Ed__32_U3CU3Em__Finally1_mCBE403584AFFABA85891203555F6CC698D09E6BD (void);
-extern void U3CGetAddressFromCoordinatesU3Ed__32_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA4FACB221F597D757B0724B7EF66A50B923032C3 (void);
-extern void U3CGetAddressFromCoordinatesU3Ed__32_System_Collections_IEnumerator_Reset_mD7FDC29F649FAFDD2E72B46D5622B9E1B00B2202 (void);
-extern void U3CGetAddressFromCoordinatesU3Ed__32_System_Collections_IEnumerator_get_Current_mCFE0CBEBB22B5592BE1482EDD771B288BE800219 (void);
-extern void U3CRefreshLocationAndDistanceU3Ed__31__ctor_mD21F342A036410C4F32AFBFCE0B6D47E5E586CBB (void);
-extern void U3CRefreshLocationAndDistanceU3Ed__31_System_IDisposable_Dispose_mF6EF88D18FB45A4DEA83FC22B51C6A29BDF752FA (void);
-extern void U3CRefreshLocationAndDistanceU3Ed__31_MoveNext_m0DDFDB28456008FB2C75664477479F530E3E55AB (void);
-extern void U3CRefreshLocationAndDistanceU3Ed__31_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m9A6717054D9A6AE566DFA7E4AB8AD1815AF06CB6 (void);
-extern void U3CRefreshLocationAndDistanceU3Ed__31_System_Collections_IEnumerator_Reset_m1B22B98CF0FE8590B0B34CEFEE1E895D067B261C (void);
-extern void U3CRefreshLocationAndDistanceU3Ed__31_System_Collections_IEnumerator_get_Current_m433AAF73016409B7624E7EF72755AF3366D3DBD4 (void);
-extern void U3CUpdateLocationAndFindNearestPipeU3Ed__28__ctor_m9647F62C1332641AFE6EBEBB6E5327EDB52D84DB (void);
-extern void U3CUpdateLocationAndFindNearestPipeU3Ed__28_System_IDisposable_Dispose_mCB7972EAAF4899268C302C99D6FBA6073888F1DF (void);
-extern void U3CUpdateLocationAndFindNearestPipeU3Ed__28_MoveNext_m93C1AF7B8D8498D99E06AE160C4F6A9CDA7432F1 (void);
-extern void U3CUpdateLocationAndFindNearestPipeU3Ed__28_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m885218480D70142ABFB654D0EB3D85BA21DEE370 (void);
-extern void U3CUpdateLocationAndFindNearestPipeU3Ed__28_System_Collections_IEnumerator_Reset_mDFCB51515C770EC0485772DC59170B231F40B9C7 (void);
-extern void U3CUpdateLocationAndFindNearestPipeU3Ed__28_System_Collections_IEnumerator_get_Current_m31A6C912149F4C823AD2461EC45CC4A2F4450058 (void);
-extern void U3CUpdateLocationAndFindtargetPipeU3Ed__27__ctor_mA3F9FFD924D2D2651326D9266122F33035153ADF (void);
-extern void U3CUpdateLocationAndFindtargetPipeU3Ed__27_System_IDisposable_Dispose_mC4BF0E6DA6DF1A96474260545EF4F9FC30BCE5D7 (void);
-extern void U3CUpdateLocationAndFindtargetPipeU3Ed__27_MoveNext_m10B0BF7847A8D22A1A6B77598FA610E39F48D70D (void);
-extern void U3CUpdateLocationAndFindtargetPipeU3Ed__27_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2891612A83557CBDAB0AF31CF1FBE1FD1DA9090C (void);
-extern void U3CUpdateLocationAndFindtargetPipeU3Ed__27_System_Collections_IEnumerator_Reset_mF7E246C58FD830C480EC6342BBF7A5F3777ED02B (void);
-extern void U3CUpdateLocationAndFindtargetPipeU3Ed__27_System_Collections_IEnumerator_get_Current_mE18E3E55B40291771825E57D197172767A8BA3DA (void);
+extern void GPSLocation_U3CUpdateLocationAndFindNearestPipeU3Eb__21_1_m4E52A3C64CB9909A51120C28D31B424CD08D0508 (void);
+extern void U3CU3Ec__cctor_m8EB5446664651392ACBC183A75D9950C58CC65C0 (void);
+extern void U3CU3Ec__ctor_m1527A939F550D93E48CCEE4CA36BAA62153DA76D (void);
+extern void U3CU3Ec_U3CUpdateLocationAndFindNearestPipeU3Eb__21_0_m4411D38F38CB4CDEEBFD23151F14AAEA549D8CE1 (void);
+extern void U3CGPSlocU3Ed__11__ctor_m47334FFE6A3001F4CF77CCA26673374A0453C077 (void);
+extern void U3CGPSlocU3Ed__11_System_IDisposable_Dispose_mE49BD23C4F6190F55DB7DBA4185D8EB14F6D809A (void);
+extern void U3CGPSlocU3Ed__11_MoveNext_mCE1F62E0E2BDC3E83E606BF7FACE39697FF6AF26 (void);
+extern void U3CGPSlocU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFA2AA75EF61477CA41DC669CCA013F8A2DC4634A (void);
+extern void U3CGPSlocU3Ed__11_System_Collections_IEnumerator_Reset_mB7B50DB168F21E12F73ED367E256D13F6C467673 (void);
+extern void U3CGPSlocU3Ed__11_System_Collections_IEnumerator_get_Current_m9D3FE6C9D15DD1787126A2E93BC0AF044AC47B44 (void);
+extern void U3CGetAddressFromCoordinatesU3Ed__25__ctor_m335D249E5B4903CA8F03398117D136191E85E37F (void);
+extern void U3CGetAddressFromCoordinatesU3Ed__25_System_IDisposable_Dispose_m3A1C6CE7DF2FA996FE13E8953CA5223C47D0D80B (void);
+extern void U3CGetAddressFromCoordinatesU3Ed__25_MoveNext_m4555DF1C99868DE27F11415230CEF379AFE6AF53 (void);
+extern void U3CGetAddressFromCoordinatesU3Ed__25_U3CU3Em__Finally1_m27926B863BDA8544D72101BA791032E64CE1D950 (void);
+extern void U3CGetAddressFromCoordinatesU3Ed__25_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3C0E4C0F0FF0A99F98E3E26593914B0B744748FE (void);
+extern void U3CGetAddressFromCoordinatesU3Ed__25_System_Collections_IEnumerator_Reset_m0BCA5EECADB3A35730641B6CB25FEC59E6E84F50 (void);
+extern void U3CGetAddressFromCoordinatesU3Ed__25_System_Collections_IEnumerator_get_Current_m7E7BF79D71E93B4702B096887B44ECF3DA4E1EFA (void);
+extern void U3CRefreshLocationAndDistanceU3Ed__24__ctor_mB1D5340F62F269CA532C633B0FE8BEECD67B5D60 (void);
+extern void U3CRefreshLocationAndDistanceU3Ed__24_System_IDisposable_Dispose_m261254D5C6657A1D2B38A71BEA3730EC7C0024A1 (void);
+extern void U3CRefreshLocationAndDistanceU3Ed__24_MoveNext_m19DFCCDB72613351D2ACCA4A8A1CEF9103B9737C (void);
+extern void U3CRefreshLocationAndDistanceU3Ed__24_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0954FE98282A6DECD68907D20E9AB86D4D360E25 (void);
+extern void U3CRefreshLocationAndDistanceU3Ed__24_System_Collections_IEnumerator_Reset_m1E9FC3A1923A5F855CEE3E04093BBDEC11E6A025 (void);
+extern void U3CRefreshLocationAndDistanceU3Ed__24_System_Collections_IEnumerator_get_Current_mFE73CD94A3C308B041B517DFBE86EB2DF909E784 (void);
+extern void U3CUpdateLocationAndFindNearestPipeU3Ed__21__ctor_mE48EA383E978761BD93EB60304AE3322926EFA00 (void);
+extern void U3CUpdateLocationAndFindNearestPipeU3Ed__21_System_IDisposable_Dispose_m61A75F54E73A340BDC674CEBD1863F49725B9610 (void);
+extern void U3CUpdateLocationAndFindNearestPipeU3Ed__21_MoveNext_m96240773C7E59AE98DBABAE6A27F7E78B100A007 (void);
+extern void U3CUpdateLocationAndFindNearestPipeU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD36A74451BBF1247F3F644A6CB845AF9EF2279D0 (void);
+extern void U3CUpdateLocationAndFindNearestPipeU3Ed__21_System_Collections_IEnumerator_Reset_m2015C43CCA85EC1EBD8E2763FFA9DA1739680837 (void);
+extern void U3CUpdateLocationAndFindNearestPipeU3Ed__21_System_Collections_IEnumerator_get_Current_mE83F196B0440162CDCE6DDFE8EC4871B5D43983E (void);
+extern void U3CUpdateLocationAndFindtargetPipeU3Ed__20__ctor_m5E3FCCA8F56E448BC0A1F26BFFFBAE68330C7C85 (void);
+extern void U3CUpdateLocationAndFindtargetPipeU3Ed__20_System_IDisposable_Dispose_m56A40512CD825B69F1B97019167CB13021997971 (void);
+extern void U3CUpdateLocationAndFindtargetPipeU3Ed__20_MoveNext_mCEC7A8C24FC3D6B317F10B1DCEA7A80D3ADD2C4B (void);
+extern void U3CUpdateLocationAndFindtargetPipeU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m222D46E1AB663143DB08CD2A4EBE7CAFFBC200E9 (void);
+extern void U3CUpdateLocationAndFindtargetPipeU3Ed__20_System_Collections_IEnumerator_Reset_m2B50E1250CF3BF40A34B8E97B43A9F84B0A2D696 (void);
+extern void U3CUpdateLocationAndFindtargetPipeU3Ed__20_System_Collections_IEnumerator_get_Current_m87CB25646C6CDCDA42D5D39A9B9E3652745550C1 (void);
 extern void Increase_number_ButtonPressed_mB408FD0F881225169490FACB515243ED953F872F (void);
 extern void Increase_number_Start_mDB79FC569442D26FB6AE00F82D517ADF61DDCA0F (void);
 extern void Increase_number_Update_m38531A29FC63F68D2FEC7605A9C7D4F7B58A562D (void);
@@ -82,11 +83,16 @@ extern void PipeDataHolder__ctor_m105DAF4E0975219D655DDB06440EE7A5D577BEB6 (void
 extern void SceneChange_Start_mFB366D7209FB423D370118ABA2DB0499DF817403 (void);
 extern void SceneChange_Update_m3014C7D76F9BC54D7F298F5C0FA2E1819F7D9C3D (void);
 extern void SceneChange_ChangetoAppHomeScene_m663F299D7994E09911FD007F7083634B61856684 (void);
-extern void SceneChange_ChangetoM2_PreVideo1Scene_m388BD3CF31F2CDA494665C68AAC26DC6EF266B71 (void);
-extern void SceneChange_ChangetoM2_Video1Scene_m539A496FE827F27A1ED61C7101B0FF2B851EC4F9 (void);
-extern void SceneChange_ChangetoM2_PreGPSScene_m231849530C3AB55C1471A14127B59F54A5425457 (void);
-extern void SceneChange_ChangetoM2_GPSScene_mC617E032C4668D3F4028766F2702EF091B1887EA (void);
-extern void SceneChange_ChangetoM2_SeePipeInCameraScene_m823A7C8733AFA0FC404424E124FDE017CC4832A9 (void);
+extern void SceneChange_Changeto_M2S1_Scene_mF381FE5EFF1514B42360D313C3B99BE472692D67 (void);
+extern void SceneChange_Changeto_M2S2_Scene_mD68B6C0B3A154DD164E95CCE5801295494829226 (void);
+extern void SceneChange_Changeto_M2S3_Scene_mEFABFD273259AD7E12DD2B8D2D80047EE63269C1 (void);
+extern void SceneChange_Changeto_M2S4_Scene_m4542A46EAFCAD1C47A8E61909F6F9C3A1E129056 (void);
+extern void SceneChange_Changeto_M2S5_Scene_mC81A562326972FE49A94BCF0CDEE17C968812A84 (void);
+extern void SceneChange_Changeto_M2S6_Scene_m07E402C261D561D0AFC36252BBB4F4C3DEDD3035 (void);
+extern void SceneChange_Changeto_M2S7_Scene_m5EAABD4B126165F00EE66926AC4B335EE10B1658 (void);
+extern void SceneChange_Changeto_M2S8_Scene_m5A5EF6C3C42C0311C2881E022888567FAE10DA1E (void);
+extern void SceneChange_Changeto_M2S9_Scene_mFB8CF8D8DD79DFF79E31C2682BF3C18F219D6214 (void);
+extern void SceneChange_Changeto_M2S10_Scene_m37C7D67D0E3B9C519F2FD153EEF8A63CCF2C3A8D (void);
 extern void SceneChange__ctor_m4BEE4E939472EAB59441D14F2324EEE353793A1B (void);
 extern void ChangeTextColor_Start_mB069CA1780A0395049D5CA5154736B18B038961C (void);
 extern void ChangeTextColor_ChangeButtonTextColor_m115BAD5809BBA7014453021C14B52CAA458878F4 (void);
@@ -188,7 +194,7 @@ extern void ARFeatheredPlaneMeshVisualizerCompanion_OnDestroy_m64B601920050D7584
 extern void ARFeatheredPlaneMeshVisualizerCompanion_Update_m541F58E1FC27F7D775FE47F2C1B1A04710BC4A27 (void);
 extern void ARFeatheredPlaneMeshVisualizerCompanion_set_visualizeSurfaces_m7A7F198C97A315F6F7F58F0BDA5269863F098D68 (void);
 extern void ARFeatheredPlaneMeshVisualizerCompanion__ctor_m3871FAD2A1135D983A9B5ADCD604F22949DE985C (void);
-static Il2CppMethodPointer s_methodPointers[176] = 
+static Il2CppMethodPointer s_methodPointers[182] = 
 {
 	DisplayPipeInfo_Start_mA58FE34C351AC47CC7F79B310B2F107C4DFB2FD6,
 	DisplayPipeInfo_Update_mB87DDC73FE438D19654CBB6C04CFC6BD4B54DFA1,
@@ -197,7 +203,6 @@ static Il2CppMethodPointer s_methodPointers[176] =
 	GPSLocation_StartGPS_mAF0FAC05E140BC65DBDFA6472E0A31A52E581515,
 	GPSLocation_GPSloc_mA5F5FC191FCC9DFEFF4896A91F71DE6C3F90DDCC,
 	GPSLocation_UpdateGPSData_mBC09D5BCEF8BB4DE1580C6D092E47CE207E0E53C,
-	GPSLocation_UpdateTextFields_m91C5F8A24E9DCEB96B936AEA5152271E5F8C7C93,
 	GPSLocation_Update_mF2B1E3893A3195058A83C6F9186133CD16ED1032,
 	GPSLocation_FindNearestPipe_m0EEC940A7DB0D6B2C6E4ED60EF3CC528C931B8A3,
 	GPSLocation_findTargetPipe_mAEB4453405109B7A2F6782B65F6EB16252A6EC0D,
@@ -210,39 +215,41 @@ static Il2CppMethodPointer s_methodPointers[176] =
 	GPSLocation_GetAddressFromCoordinates_m0EBEA120D6B2CDB7780F8218D0F3A36136158786,
 	GPSLocation_OnSeePipeLocationClicked_m018E8812D48FB8067EAF1577ABACEC9816785CF9,
 	GPSLocation__ctor_m638B90C04165C58577979CED0734DA5CC84584B4,
-	GPSLocation_U3CUpdateLocationAndFindNearestPipeU3Eb__28_0_m3F1F966F15900B5970C180DB2283EA13D01205A1,
-	GPSLocation_U3CUpdateLocationAndFindNearestPipeU3Eb__28_1_mBB3C1C96C016A656DEECA15D76BEA5023F0BCB74,
-	U3CGPSlocU3Ed__17__ctor_m8D0AEE0CC7FEACF7DA75ECDC85F9F0099CCFE698,
-	U3CGPSlocU3Ed__17_System_IDisposable_Dispose_mFAE594864C127E33DA1E7B8A584CEBBDB414AE39,
-	U3CGPSlocU3Ed__17_MoveNext_m0DC458559937220A3EB0E929CCD0C9FF1C357149,
-	U3CGPSlocU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6BD1F1D66E6E5C09378F2B575F405A33C00FC68F,
-	U3CGPSlocU3Ed__17_System_Collections_IEnumerator_Reset_m37186DE7C654AE0FD17C05358C45517F22F6F939,
-	U3CGPSlocU3Ed__17_System_Collections_IEnumerator_get_Current_m7DAF8DD48B8C2A54C0B9493AEBC7597450E40168,
-	U3CGetAddressFromCoordinatesU3Ed__32__ctor_m0EF6BF23C4EC85953423347A4C0FCFC9C77B73C7,
-	U3CGetAddressFromCoordinatesU3Ed__32_System_IDisposable_Dispose_m2C4BDF4F4ACCC6E94A5EE21FE2867DCD48D00538,
-	U3CGetAddressFromCoordinatesU3Ed__32_MoveNext_mF94C3A57606B125930E974415A22FC3FA6F8FA7D,
-	U3CGetAddressFromCoordinatesU3Ed__32_U3CU3Em__Finally1_mCBE403584AFFABA85891203555F6CC698D09E6BD,
-	U3CGetAddressFromCoordinatesU3Ed__32_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA4FACB221F597D757B0724B7EF66A50B923032C3,
-	U3CGetAddressFromCoordinatesU3Ed__32_System_Collections_IEnumerator_Reset_mD7FDC29F649FAFDD2E72B46D5622B9E1B00B2202,
-	U3CGetAddressFromCoordinatesU3Ed__32_System_Collections_IEnumerator_get_Current_mCFE0CBEBB22B5592BE1482EDD771B288BE800219,
-	U3CRefreshLocationAndDistanceU3Ed__31__ctor_mD21F342A036410C4F32AFBFCE0B6D47E5E586CBB,
-	U3CRefreshLocationAndDistanceU3Ed__31_System_IDisposable_Dispose_mF6EF88D18FB45A4DEA83FC22B51C6A29BDF752FA,
-	U3CRefreshLocationAndDistanceU3Ed__31_MoveNext_m0DDFDB28456008FB2C75664477479F530E3E55AB,
-	U3CRefreshLocationAndDistanceU3Ed__31_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m9A6717054D9A6AE566DFA7E4AB8AD1815AF06CB6,
-	U3CRefreshLocationAndDistanceU3Ed__31_System_Collections_IEnumerator_Reset_m1B22B98CF0FE8590B0B34CEFEE1E895D067B261C,
-	U3CRefreshLocationAndDistanceU3Ed__31_System_Collections_IEnumerator_get_Current_m433AAF73016409B7624E7EF72755AF3366D3DBD4,
-	U3CUpdateLocationAndFindNearestPipeU3Ed__28__ctor_m9647F62C1332641AFE6EBEBB6E5327EDB52D84DB,
-	U3CUpdateLocationAndFindNearestPipeU3Ed__28_System_IDisposable_Dispose_mCB7972EAAF4899268C302C99D6FBA6073888F1DF,
-	U3CUpdateLocationAndFindNearestPipeU3Ed__28_MoveNext_m93C1AF7B8D8498D99E06AE160C4F6A9CDA7432F1,
-	U3CUpdateLocationAndFindNearestPipeU3Ed__28_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m885218480D70142ABFB654D0EB3D85BA21DEE370,
-	U3CUpdateLocationAndFindNearestPipeU3Ed__28_System_Collections_IEnumerator_Reset_mDFCB51515C770EC0485772DC59170B231F40B9C7,
-	U3CUpdateLocationAndFindNearestPipeU3Ed__28_System_Collections_IEnumerator_get_Current_m31A6C912149F4C823AD2461EC45CC4A2F4450058,
-	U3CUpdateLocationAndFindtargetPipeU3Ed__27__ctor_mA3F9FFD924D2D2651326D9266122F33035153ADF,
-	U3CUpdateLocationAndFindtargetPipeU3Ed__27_System_IDisposable_Dispose_mC4BF0E6DA6DF1A96474260545EF4F9FC30BCE5D7,
-	U3CUpdateLocationAndFindtargetPipeU3Ed__27_MoveNext_m10B0BF7847A8D22A1A6B77598FA610E39F48D70D,
-	U3CUpdateLocationAndFindtargetPipeU3Ed__27_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2891612A83557CBDAB0AF31CF1FBE1FD1DA9090C,
-	U3CUpdateLocationAndFindtargetPipeU3Ed__27_System_Collections_IEnumerator_Reset_mF7E246C58FD830C480EC6342BBF7A5F3777ED02B,
-	U3CUpdateLocationAndFindtargetPipeU3Ed__27_System_Collections_IEnumerator_get_Current_mE18E3E55B40291771825E57D197172767A8BA3DA,
+	GPSLocation_U3CUpdateLocationAndFindNearestPipeU3Eb__21_1_m4E52A3C64CB9909A51120C28D31B424CD08D0508,
+	U3CU3Ec__cctor_m8EB5446664651392ACBC183A75D9950C58CC65C0,
+	U3CU3Ec__ctor_m1527A939F550D93E48CCEE4CA36BAA62153DA76D,
+	U3CU3Ec_U3CUpdateLocationAndFindNearestPipeU3Eb__21_0_m4411D38F38CB4CDEEBFD23151F14AAEA549D8CE1,
+	U3CGPSlocU3Ed__11__ctor_m47334FFE6A3001F4CF77CCA26673374A0453C077,
+	U3CGPSlocU3Ed__11_System_IDisposable_Dispose_mE49BD23C4F6190F55DB7DBA4185D8EB14F6D809A,
+	U3CGPSlocU3Ed__11_MoveNext_mCE1F62E0E2BDC3E83E606BF7FACE39697FF6AF26,
+	U3CGPSlocU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFA2AA75EF61477CA41DC669CCA013F8A2DC4634A,
+	U3CGPSlocU3Ed__11_System_Collections_IEnumerator_Reset_mB7B50DB168F21E12F73ED367E256D13F6C467673,
+	U3CGPSlocU3Ed__11_System_Collections_IEnumerator_get_Current_m9D3FE6C9D15DD1787126A2E93BC0AF044AC47B44,
+	U3CGetAddressFromCoordinatesU3Ed__25__ctor_m335D249E5B4903CA8F03398117D136191E85E37F,
+	U3CGetAddressFromCoordinatesU3Ed__25_System_IDisposable_Dispose_m3A1C6CE7DF2FA996FE13E8953CA5223C47D0D80B,
+	U3CGetAddressFromCoordinatesU3Ed__25_MoveNext_m4555DF1C99868DE27F11415230CEF379AFE6AF53,
+	U3CGetAddressFromCoordinatesU3Ed__25_U3CU3Em__Finally1_m27926B863BDA8544D72101BA791032E64CE1D950,
+	U3CGetAddressFromCoordinatesU3Ed__25_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3C0E4C0F0FF0A99F98E3E26593914B0B744748FE,
+	U3CGetAddressFromCoordinatesU3Ed__25_System_Collections_IEnumerator_Reset_m0BCA5EECADB3A35730641B6CB25FEC59E6E84F50,
+	U3CGetAddressFromCoordinatesU3Ed__25_System_Collections_IEnumerator_get_Current_m7E7BF79D71E93B4702B096887B44ECF3DA4E1EFA,
+	U3CRefreshLocationAndDistanceU3Ed__24__ctor_mB1D5340F62F269CA532C633B0FE8BEECD67B5D60,
+	U3CRefreshLocationAndDistanceU3Ed__24_System_IDisposable_Dispose_m261254D5C6657A1D2B38A71BEA3730EC7C0024A1,
+	U3CRefreshLocationAndDistanceU3Ed__24_MoveNext_m19DFCCDB72613351D2ACCA4A8A1CEF9103B9737C,
+	U3CRefreshLocationAndDistanceU3Ed__24_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0954FE98282A6DECD68907D20E9AB86D4D360E25,
+	U3CRefreshLocationAndDistanceU3Ed__24_System_Collections_IEnumerator_Reset_m1E9FC3A1923A5F855CEE3E04093BBDEC11E6A025,
+	U3CRefreshLocationAndDistanceU3Ed__24_System_Collections_IEnumerator_get_Current_mFE73CD94A3C308B041B517DFBE86EB2DF909E784,
+	U3CUpdateLocationAndFindNearestPipeU3Ed__21__ctor_mE48EA383E978761BD93EB60304AE3322926EFA00,
+	U3CUpdateLocationAndFindNearestPipeU3Ed__21_System_IDisposable_Dispose_m61A75F54E73A340BDC674CEBD1863F49725B9610,
+	U3CUpdateLocationAndFindNearestPipeU3Ed__21_MoveNext_m96240773C7E59AE98DBABAE6A27F7E78B100A007,
+	U3CUpdateLocationAndFindNearestPipeU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD36A74451BBF1247F3F644A6CB845AF9EF2279D0,
+	U3CUpdateLocationAndFindNearestPipeU3Ed__21_System_Collections_IEnumerator_Reset_m2015C43CCA85EC1EBD8E2763FFA9DA1739680837,
+	U3CUpdateLocationAndFindNearestPipeU3Ed__21_System_Collections_IEnumerator_get_Current_mE83F196B0440162CDCE6DDFE8EC4871B5D43983E,
+	U3CUpdateLocationAndFindtargetPipeU3Ed__20__ctor_m5E3FCCA8F56E448BC0A1F26BFFFBAE68330C7C85,
+	U3CUpdateLocationAndFindtargetPipeU3Ed__20_System_IDisposable_Dispose_m56A40512CD825B69F1B97019167CB13021997971,
+	U3CUpdateLocationAndFindtargetPipeU3Ed__20_MoveNext_mCEC7A8C24FC3D6B317F10B1DCEA7A80D3ADD2C4B,
+	U3CUpdateLocationAndFindtargetPipeU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m222D46E1AB663143DB08CD2A4EBE7CAFFBC200E9,
+	U3CUpdateLocationAndFindtargetPipeU3Ed__20_System_Collections_IEnumerator_Reset_m2B50E1250CF3BF40A34B8E97B43A9F84B0A2D696,
+	U3CUpdateLocationAndFindtargetPipeU3Ed__20_System_Collections_IEnumerator_get_Current_m87CB25646C6CDCDA42D5D39A9B9E3652745550C1,
 	Increase_number_ButtonPressed_mB408FD0F881225169490FACB515243ED953F872F,
 	Increase_number_Start_mDB79FC569442D26FB6AE00F82D517ADF61DDCA0F,
 	Increase_number_Update_m38531A29FC63F68D2FEC7605A9C7D4F7B58A562D,
@@ -260,11 +267,16 @@ static Il2CppMethodPointer s_methodPointers[176] =
 	SceneChange_Start_mFB366D7209FB423D370118ABA2DB0499DF817403,
 	SceneChange_Update_m3014C7D76F9BC54D7F298F5C0FA2E1819F7D9C3D,
 	SceneChange_ChangetoAppHomeScene_m663F299D7994E09911FD007F7083634B61856684,
-	SceneChange_ChangetoM2_PreVideo1Scene_m388BD3CF31F2CDA494665C68AAC26DC6EF266B71,
-	SceneChange_ChangetoM2_Video1Scene_m539A496FE827F27A1ED61C7101B0FF2B851EC4F9,
-	SceneChange_ChangetoM2_PreGPSScene_m231849530C3AB55C1471A14127B59F54A5425457,
-	SceneChange_ChangetoM2_GPSScene_mC617E032C4668D3F4028766F2702EF091B1887EA,
-	SceneChange_ChangetoM2_SeePipeInCameraScene_m823A7C8733AFA0FC404424E124FDE017CC4832A9,
+	SceneChange_Changeto_M2S1_Scene_mF381FE5EFF1514B42360D313C3B99BE472692D67,
+	SceneChange_Changeto_M2S2_Scene_mD68B6C0B3A154DD164E95CCE5801295494829226,
+	SceneChange_Changeto_M2S3_Scene_mEFABFD273259AD7E12DD2B8D2D80047EE63269C1,
+	SceneChange_Changeto_M2S4_Scene_m4542A46EAFCAD1C47A8E61909F6F9C3A1E129056,
+	SceneChange_Changeto_M2S5_Scene_mC81A562326972FE49A94BCF0CDEE17C968812A84,
+	SceneChange_Changeto_M2S6_Scene_m07E402C261D561D0AFC36252BBB4F4C3DEDD3035,
+	SceneChange_Changeto_M2S7_Scene_m5EAABD4B126165F00EE66926AC4B335EE10B1658,
+	SceneChange_Changeto_M2S8_Scene_m5A5EF6C3C42C0311C2881E022888567FAE10DA1E,
+	SceneChange_Changeto_M2S9_Scene_mFB8CF8D8DD79DFF79E31C2682BF3C18F219D6214,
+	SceneChange_Changeto_M2S10_Scene_m37C7D67D0E3B9C519F2FD153EEF8A63CCF2C3A8D,
 	SceneChange__ctor_m4BEE4E939472EAB59441D14F2324EEE353793A1B,
 	ChangeTextColor_Start_mB069CA1780A0395049D5CA5154736B18B038961C,
 	ChangeTextColor_ChangeButtonTextColor_m115BAD5809BBA7014453021C14B52CAA458878F4,
@@ -370,192 +382,198 @@ static Il2CppMethodPointer s_methodPointers[176] =
 extern void Goal__ctor_m1545B6E40E910D8B0648797BF96520F84FF2FF40_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] = 
 {
-	{ 0x06000081, Goal__ctor_m1545B6E40E910D8B0648797BF96520F84FF2FF40_AdjustorThunk },
+	{ 0x06000087, Goal__ctor_m1545B6E40E910D8B0648797BF96520F84FF2FF40_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[176] = 
+static const int32_t s_InvokerIndices[182] = 
 {
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9094,
-	9242,
-	697,
-	9242,
-	2989,
-	5267,
-	9242,
-	9094,
-	9094,
-	7352,
-	9242,
-	9094,
-	1690,
-	9242,
-	9242,
-	7224,
-	7224,
-	7174,
-	9242,
-	8949,
-	9094,
-	9242,
-	9094,
-	7174,
-	9242,
-	8949,
-	9242,
-	9094,
-	9242,
-	9094,
-	7174,
-	9242,
-	8949,
-	9094,
-	9242,
-	9094,
-	7174,
-	9242,
-	8949,
-	9094,
-	9242,
-	9094,
-	7174,
-	9242,
-	8949,
-	9094,
-	9242,
-	9094,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	14290,
-	14076,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	7086,
-	9242,
-	9242,
-	9242,
-	9242,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9242,
-	9242,
-	9242,
-	9242,
-	7174,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	7082,
-	7443,
-	9242,
-	9242,
-	9242,
-	7052,
-	9242,
-	7174,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9094,
-	7224,
-	9242,
-	9242,
-	9242,
-	6364,
-	9242,
-	7224,
-	9242,
-	9242,
-	9242,
-	7174,
-	9242,
-	8949,
-	9094,
-	9242,
-	9094,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	9242,
-	14374,
-	9242,
-	9094,
-	9242,
-	14350,
-	9094,
-	7224,
-	9159,
-	7283,
-	9242,
-	9242,
-	9242,
-	7082,
-	9242,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9004,
+	9152,
+	9152,
+	2945,
+	5204,
+	9152,
+	9004,
+	9004,
+	7284,
+	9152,
+	9004,
+	1677,
+	9152,
+	9152,
+	7156,
+	14221,
+	9152,
+	7156,
+	7106,
+	9152,
+	8859,
+	9004,
+	9152,
+	9004,
+	7106,
+	9152,
+	8859,
+	9152,
+	9004,
+	9152,
+	9004,
+	7106,
+	9152,
+	8859,
+	9004,
+	9152,
+	9004,
+	7106,
+	9152,
+	8859,
+	9004,
+	9152,
+	9004,
+	7106,
+	9152,
+	8859,
+	9004,
+	9152,
+	9004,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	14162,
+	13948,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	7018,
+	9152,
+	9152,
+	9152,
+	9152,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9152,
+	9152,
+	9152,
+	9152,
+	7106,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	7014,
+	7375,
+	9152,
+	9152,
+	9152,
+	6984,
+	9152,
+	7106,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9004,
+	7156,
+	9152,
+	9152,
+	9152,
+	6299,
+	9152,
+	7156,
+	9152,
+	9152,
+	9152,
+	7106,
+	9152,
+	8859,
+	9004,
+	9152,
+	9004,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	9152,
+	14245,
+	9152,
+	9004,
+	9152,
+	14221,
+	9004,
+	7156,
+	9069,
+	7215,
+	9152,
+	9152,
+	9152,
+	7014,
+	9152,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	176,
+	182,
 	s_methodPointers,
 	1,
 	s_adjustorThunks,

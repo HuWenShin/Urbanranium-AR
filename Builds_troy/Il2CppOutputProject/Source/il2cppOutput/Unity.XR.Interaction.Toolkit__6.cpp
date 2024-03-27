@@ -27819,7 +27819,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AffordanceStateData_t925209B85B56D04F7F178061
 		L_1 = BaseAffordanceStateProvider_get_currentAffordanceStateData_m816A94CE0C10C5FC59858FFACBFF407E9D57B9D3_inline(__this, NULL);
 		NullCheck(L_1);
 		AffordanceStateData_t925209B85B56D04F7F178061B1C91280DA6DBC69 L_2;
-		L_2 = InterfaceFuncInvoker0< AffordanceStateData_t925209B85B56D04F7F178061B1C91280DA6DBC69 >::Invoke(3, IReadOnlyBindableVariable_1_t27AEE302500BB845FE299C6267D0F3D8CDFBC62E_il2cpp_TypeInfo_var, L_1);
+		L_2 = InterfaceFuncInvoker0< AffordanceStateData_t925209B85B56D04F7F178061B1C91280DA6DBC69 >::Invoke(2, IReadOnlyBindableVariable_1_t27AEE302500BB845FE299C6267D0F3D8CDFBC62E_il2cpp_TypeInfo_var, L_1);
 		return L_2;
 	}
 
@@ -27890,7 +27890,7 @@ IL_0051:
 		L_11 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IXRInteractionStrengthInteractable_t52BCDEE266F1ECB1C7F630F3C6D74CEB1AC5BB22_il2cpp_TypeInfo_var, L_10);
 		NullCheck(L_11);
 		float L_12;
-		L_12 = InterfaceFuncInvoker0< float >::Invoke(3, IReadOnlyBindableVariable_1_t23D8CDBD7652D1A670E20795EFB3594893BDEF59_il2cpp_TypeInfo_var, L_11);
+		L_12 = InterfaceFuncInvoker0< float >::Invoke(2, IReadOnlyBindableVariable_1_t23D8CDBD7652D1A670E20795EFB3594893BDEF59_il2cpp_TypeInfo_var, L_11);
 		G_B11_0 = L_12;
 	}
 
@@ -27977,7 +27977,7 @@ IL_00a5:
 		L_22 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IXRInteractionStrengthInteractable_t52BCDEE266F1ECB1C7F630F3C6D74CEB1AC5BB22_il2cpp_TypeInfo_var, L_21);
 		NullCheck(L_22);
 		float L_23;
-		L_23 = InterfaceFuncInvoker0< float >::Invoke(3, IReadOnlyBindableVariable_1_t23D8CDBD7652D1A670E20795EFB3594893BDEF59_il2cpp_TypeInfo_var, L_22);
+		L_23 = InterfaceFuncInvoker0< float >::Invoke(2, IReadOnlyBindableVariable_1_t23D8CDBD7652D1A670E20795EFB3594893BDEF59_il2cpp_TypeInfo_var, L_22);
 		G_B22_0 = L_23;
 		G_B22_1 = G_B21_0;
 	}
@@ -30137,7 +30137,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AffordanceStateData_t925209B85B56D04F7F178061
 		L_1 = BaseAffordanceStateProvider_get_currentAffordanceStateData_m816A94CE0C10C5FC59858FFACBFF407E9D57B9D3_inline(__this, NULL);
 		NullCheck(L_1);
 		AffordanceStateData_t925209B85B56D04F7F178061B1C91280DA6DBC69 L_2;
-		L_2 = InterfaceFuncInvoker0< AffordanceStateData_t925209B85B56D04F7F178061B1C91280DA6DBC69 >::Invoke(3, IReadOnlyBindableVariable_1_t27AEE302500BB845FE299C6267D0F3D8CDFBC62E_il2cpp_TypeInfo_var, L_1);
+		L_2 = InterfaceFuncInvoker0< AffordanceStateData_t925209B85B56D04F7F178061B1C91280DA6DBC69 >::Invoke(2, IReadOnlyBindableVariable_1_t27AEE302500BB845FE299C6267D0F3D8CDFBC62E_il2cpp_TypeInfo_var, L_1);
 		return L_2;
 	}
 
@@ -30210,7 +30210,7 @@ IL_0051:
 		L_11 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IXRInteractionStrengthInteractor_t537C7EE8780B5C25CF5081BEDDA6471FFB40F2CE_il2cpp_TypeInfo_var, L_10);
 		NullCheck(L_11);
 		float L_12;
-		L_12 = InterfaceFuncInvoker0< float >::Invoke(3, IReadOnlyBindableVariable_1_t23D8CDBD7652D1A670E20795EFB3594893BDEF59_il2cpp_TypeInfo_var, L_11);
+		L_12 = InterfaceFuncInvoker0< float >::Invoke(2, IReadOnlyBindableVariable_1_t23D8CDBD7652D1A670E20795EFB3594893BDEF59_il2cpp_TypeInfo_var, L_11);
 		G_B11_0 = L_12;
 	}
 
@@ -30270,7 +30270,7 @@ IL_0091:
 		L_20 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IXRInteractionStrengthInteractor_t537C7EE8780B5C25CF5081BEDDA6471FFB40F2CE_il2cpp_TypeInfo_var, L_19);
 		NullCheck(L_20);
 		float L_21;
-		L_21 = InterfaceFuncInvoker0< float >::Invoke(3, IReadOnlyBindableVariable_1_t23D8CDBD7652D1A670E20795EFB3594893BDEF59_il2cpp_TypeInfo_var, L_20);
+		L_21 = InterfaceFuncInvoker0< float >::Invoke(2, IReadOnlyBindableVariable_1_t23D8CDBD7652D1A670E20795EFB3594893BDEF59_il2cpp_TypeInfo_var, L_20);
 		G_B18_0 = L_21;
 	}
 

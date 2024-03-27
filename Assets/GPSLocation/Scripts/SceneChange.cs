@@ -22,31 +22,54 @@ public class SceneChange : MonoBehaviour
         SceneManager.LoadScene("AppHome");
     }
 
-    public void ChangetoM2_PreVideo1Scene()
+    public void Changeto_M2S1_Scene()
     {
-        SceneManager.LoadScene("M2_PreVideo1");
+        SceneManager.LoadScene("M2S1");
     }
 
-    public void ChangetoM2_Video1Scene()
+    public void Changeto_M2S2_Scene()
     {
-        SceneManager.LoadScene("M2_Video1");
+        SceneManager.LoadScene("M2S2");
     }
 
-
-    public void ChangetoM2_PreGPSScene()
+    public void Changeto_M2S3_Scene()
     {
-        SceneManager.LoadScene("M2_PreGPS");
+        SceneManager.LoadScene("M2S3");
     }
 
-    public void ChangetoM2_GPSScene()
+    public void Changeto_M2S4_Scene()
     {
-        SceneManager.LoadScene("M2_GPSLocation");
+        SceneManager.LoadScene("M2S4");
     }
 
-
-    public void ChangetoM2_SeePipeInCameraScene()
+    public void Changeto_M2S5_Scene()
     {
-        SceneManager.LoadScene("M2_SeePipeInCamera");
+        SceneManager.LoadScene("M2S5");
+    }
+
+    public void Changeto_M2S6_Scene()
+    {
+        SceneManager.LoadScene("M2S6");
+    }
+
+    public void Changeto_M2S7_Scene()
+    {
+        SceneManager.LoadScene("M2S7");
+    }
+
+    public void Changeto_M2S8_Scene()
+    {
+        SceneManager.LoadScene("M2S8");
+    }
+
+    public void Changeto_M2S9_Scene()
+    {
+        SceneManager.LoadScene("M2S9");
+    }
+
+    public void Changeto_M2S10_Scene()
+    {
+        SceneManager.LoadScene("M2S10");
     }
 
 

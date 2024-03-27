@@ -25574,7 +25574,7 @@ IL_001b:
 		L_6 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IPokeStateDataProvider_t44A37A07F4158455AD30DD3BE0AE5B603E61AD1E_il2cpp_TypeInfo_var, L_5);
 		NullCheck(L_6);
 		PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 L_7;
-		L_7 = InterfaceFuncInvoker0< PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 >::Invoke(3, IReadOnlyBindableVariable_1_tD608177C44612AEF9CD25AEDCA15F1734DD0E073_il2cpp_TypeInfo_var, L_6);
+		L_7 = InterfaceFuncInvoker0< PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 >::Invoke(2, IReadOnlyBindableVariable_1_tD608177C44612AEF9CD25AEDCA15F1734DD0E073_il2cpp_TypeInfo_var, L_6);
 		V_0 = L_7;
 	}
 

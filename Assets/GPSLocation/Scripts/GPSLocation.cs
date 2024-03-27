@@ -9,14 +9,14 @@ using TMPro;
 public class GPSLocation : MonoBehaviour
 {
     //public TextMeshProUGUI GPSStatus;
-    public TextMeshProUGUI latitudeValue;
-    public TextMeshProUGUI longitudeValue;
-    public TextMeshProUGUI userLocationAddress;
+    // public TextMeshProUGUI latitudeValue;
+    // public TextMeshProUGUI longitudeValue;
+    // public TextMeshProUGUI userLocationAddress;
 
 
 
     // Variables of pipes
-    public TextMeshProUGUI nearestPipeInfo; // Add this for displaying nearest pipe info
+    // public TextMeshProUGUI nearestPipeInfo; // Add this for displaying nearest pipe info
     public TextMeshProUGUI nearestPipeAddress;
     public LoadVancouverSewers pipeLoader; // Reference to your PipeLoader script
     // Start is called before the first frame update
@@ -40,18 +40,18 @@ public class GPSLocation : MonoBehaviour
 
 
     // Pipe image
-    public Image pipeImg;
+    // public Image pipeImg;
     // Purple Municipal GIF
-    public Image purpleWalkGIF;
+    // public Image purpleWalkGIF;
 
     void Start()
     {
         //StartCoroutine(GPSloc());
 
         // Hide the image at the start
-        if (pipeImg != null) pipeImg.enabled = false;
+        // if (pipeImg != null) pipeImg.enabled = false;
         // Hide GIF at the start
-        if (purpleWalkGIF != null) purpleWalkGIF.enabled = false;
+        // if (purpleWalkGIF != null) purpleWalkGIF.enabled = false;
 
         if (goToCameraSceneButton != null) goToCameraSceneButton.gameObject.SetActive(false);
 
@@ -126,13 +126,16 @@ public class GPSLocation : MonoBehaviour
         // Ensure that Input.location.status is checked right after it's been initialized
         if (Input.location.status == LocationServiceStatus.Running)
         {
-            UpdateTextFields(
-                Input.location.lastData.latitude.ToString(),
-                Input.location.lastData.longitude.ToString(),
-                Input.location.lastData.altitude.ToString(),
-                Input.location.lastData.horizontalAccuracy.ToString(),
-                Input.location.lastData.timestamp.ToString()
-            );
+            // UpdateTextFields(
+            //     Input.location.lastData.latitude.ToString(),
+            //     Input.location.lastData.longitude.ToString(),
+            //     Input.location.lastData.altitude.ToString(),
+            //     Input.location.lastData.horizontalAccuracy.ToString(),
+            //     Input.location.lastData.timestamp.ToString()
+            // );
+
+            // Do nothing
+            Debug.Log("Location service running");
         }
         else
         {
@@ -141,14 +144,14 @@ public class GPSLocation : MonoBehaviour
         }
     }
 
-    private void UpdateTextFields(string latitude, string longitude, string altitude, string horizontalAccuracy, string timestamp)
-    {
-        if (latitudeValue != null) latitudeValue.text = latitude;
-        else Debug.LogError("latitudeValue TextMeshProUGUI component not set in the inspector.");
+    // private void UpdateTextFields(string latitude, string longitude, string altitude, string horizontalAccuracy, string timestamp)
+    // {
+    //     if (latitudeValue != null) latitudeValue.text = latitude;
+    //     else Debug.LogError("latitudeValue TextMeshProUGUI component not set in the inspector.");
 
-        if (longitudeValue != null) longitudeValue.text = longitude;
-        else Debug.LogError("longitudeValue TextMeshProUGUI component not set in the inspector.");
-    }
+    //     if (longitudeValue != null) longitudeValue.text = longitude;
+    //     else Debug.LogError("longitudeValue TextMeshProUGUI component not set in the inspector.");
+    // }
 
 
 
@@ -233,15 +236,17 @@ public class GPSLocation : MonoBehaviour
                 {
 
                     // Display the nearest pipe information
-                    nearestPipeInfo.text = "Found target pipe:\n" + $"Target Pipe Location: {nearestPipe.geo_point_2d.lat}, {nearestPipe.geo_point_2d.lon}\n"
-                        + $"Diameter: {nearestPipe.diameter_mm} mm, " +
-                                           $"Material: {nearestPipe.material}, " +
-                                           $"Installed: {nearestPipe.install_yr}";
+                    // nearestPipeInfo.text = "Found a pipe around you:\n" + $"Target Pipe Location: {nearestPipe.geo_point_2d.lat}, {nearestPipe.geo_point_2d.lon}\n"
+                    //     + $"Diameter: {nearestPipe.diameter_mm} mm, " +
+                    //                        $"Material: {nearestPipe.material}, " +
+                    //                        $"Installed: {nearestPipe.install_yr}";
+
+                    // nearestPipeInfo.text = "Found a pipe around you!\n";
 
                     // Show hidden pipe image
-                    if (pipeImg != null) pipeImg.enabled = true;
+                    // if (pipeImg != null) pipeImg.enabled = true;
                     // Show hidden GIF
-                    if (purpleWalkGIF != null) purpleWalkGIF.enabled = true;
+                    // if (purpleWalkGIF != null) purpleWalkGIF.enabled = true;
                     //Debug.Log($"Nearest Pipe Info: Diameter {nearestPipe.diameter_mm} mm, Material: {nearestPipe.material}, Installed: {nearestPipe.install_yr}");
 
                 }
@@ -295,7 +300,8 @@ public class GPSLocation : MonoBehaviour
 
             StartCoroutine(GetAddressFromCoordinates(userLat, userLon, address =>
             {
-                userLocationAddress.text = $"Your Address: {address}";
+                // userLocationAddress.text = $"Your Address: {address}";
+                Debug.Log($"Your Address: {address}");
             }));
 
 
@@ -327,21 +333,18 @@ public class GPSLocation : MonoBehaviour
                 Vector2 pipeLocation = new Vector2((float)nearestPipe.geo_point_2d.lat, (float)nearestPipe.geo_point_2d.lon);
                 StartCoroutine(GetAddressFromCoordinates(pipeLocation.x, pipeLocation.y, address =>
                 {
-                    nearestPipeAddress.text = $"Address: {address}";
+                    nearestPipeAddress.text = $"The pipe is at: {address}";
                 }));
 
 
                 // Display the nearest pipe information
-                nearestPipeInfo.text = "Finding nearest pipe:\n" + $"Location: {String.Format("{0:0.#####}", nearestPipe.geo_point_2d.lat)}, {String.Format("{0:0.#####}", nearestPipe.geo_point_2d.lon)}\n"
-                    + $"Diameter: {nearestPipe.diameter_mm} mm, \n" +
-                                       $"Material: {nearestPipe.material}, " +
-                                       $"Installed: {nearestPipe.install_yr}";
+                // nearestPipeInfo.text = "Found a pipe around you!\n";
 
                 // Show hidden pipe image
-                if (pipeImg != null) pipeImg.enabled = true;
+                // if (pipeImg != null) pipeImg.enabled = true;
                 // Show hidden GIF
-                if (purpleWalkGIF != null) purpleWalkGIF.enabled = true;
-                //Debug.Log($"Nearest Pipe Info: Diameter {nearestPipe.diameter_mm} mm, Material: {nearestPipe.material}, Installed: {nearestPipe.install_yr}");
+                // if (purpleWalkGIF != null) purpleWalkGIF.enabled = true;
+
             }
             else
             {
@@ -367,12 +370,12 @@ public class GPSLocation : MonoBehaviour
 
             if (isWithinRange)
             {
-                reachedPipe.text = "\nNice! You have reached the pipe";
+                reachedPipe.text = "\nNice! You have reached the pipe! Clik on the Next button to see the pipe and Municipal using your camera!";
                 if (goToCameraSceneButton != null) goToCameraSceneButton.gameObject.SetActive(true); // Show the button
             }
             else
             {
-                reachedPipe.text = "\nNot there yet, try to get closer";
+                reachedPipe.text = "\nNot there yet, try to get closer. Click on the button below to refresh your location. Can't find the pipe? Use the map button to see the pipe location.";
                 if (goToCameraSceneButton != null) goToCameraSceneButton.gameObject.SetActive(false); // Hide the button
             }
         }

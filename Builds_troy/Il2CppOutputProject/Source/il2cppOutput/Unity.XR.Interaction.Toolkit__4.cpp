@@ -7470,7 +7470,7 @@ IL_000d_1:
 				L_9 = TrackedDeviceGraphicRaycaster_get_pokeStateData_m9C726F156923407DEE8392621DFBF4B94E6C0C1A(L_8, NULL);
 				NullCheck(L_9);
 				PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 L_10;
-				L_10 = InterfaceFuncInvoker0< PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 >::Invoke(3, IReadOnlyBindableVariable_1_tD608177C44612AEF9CD25AEDCA15F1734DD0E073_il2cpp_TypeInfo_var, L_9);
+				L_10 = InterfaceFuncInvoker0< PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 >::Invoke(2, IReadOnlyBindableVariable_1_tD608177C44612AEF9CD25AEDCA15F1734DD0E073_il2cpp_TypeInfo_var, L_9);
 				*(PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032*)L_7 = L_10;
 				Il2CppCodeGenWriteBarrier((void**)&(((PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032*)L_7)->___U3CtargetU3Ek__BackingField), (void*)NULL);
 				V_3 = (bool)1;
