@@ -9,52 +9,52 @@ EditorBuildSettings:
     path: Assets/Scenes/AppHome.unity
     guid: de978314ed1f84eb6be2d0cbfd1922c8
   - enabled: 1
-    path: Assets/Scenes/M1S3.unity
+    path: Assets/Scenes/M1S3I1.unity
     guid: 1a8932c3241b64c0985975c5283d3351
   - enabled: 1
-    path: Assets/Scenes/M1S4.unity
+    path: Assets/Scenes/M1S4V1.unity
     guid: 6c0f9207ce7ea4e66af2de017974f9f8
   - enabled: 1
-    path: Assets/Scenes/M1S5.unity
+    path: Assets/Scenes/M1S5V2.unity
     guid: c24b3820d5a3f4492ac40d0de3d1e90b
   - enabled: 1
-    path: Assets/Scenes/M1S6.unity
+    path: Assets/Scenes/M1S6I2.unity
     guid: bbc26f81b7d314969ad25e2fd29c404d
   - enabled: 1
-    path: Assets/Scenes/M1S7.unity
+    path: Assets/Scenes/M1S7AR1.unity
     guid: 4755b35b590504809a7525fd2109c2e2
   - enabled: 1
-    path: Assets/Scenes/M1S8.unity
+    path: Assets/Scenes/M1S8I3.unity
     guid: 3f858dae001b64c98883559c04e821e3
   - enabled: 1
-    path: Assets/Scenes/M1S9.unity
+    path: Assets/Scenes/M1S9V3.unity
     guid: 795f8636822a540a7bc09b7343c2571a
   - enabled: 1
-    path: Assets/Scenes/M1S10.unity
+    path: Assets/Scenes/M1S10I4.unity
     guid: e67b26a2f0693456b871151d1b1886ef
   - enabled: 1
-    path: Assets/Scenes/M1S11.unity
+    path: Assets/Scenes/M1S11AR2.unity
     guid: d60eba97729ff4b9dbe77cfcb87995df
   - enabled: 1
-    path: Assets/Scenes/M1S12.unity
+    path: Assets/Scenes/M1S12I5.unity
     guid: f8fb6a810420b41d381732f39eeb5a89
   - enabled: 1
-    path: Assets/Scenes/M1S13.unity
+    path: Assets/Scenes/M1S13V4.unity
     guid: 56dcf26af10144a59a199ded61cca9bc
   - enabled: 1
-    path: Assets/Scenes/M1S14.unity
+    path: Assets/Scenes/M1S14I6.unity
     guid: 6501ffe8e40b84c1fa23459276f3bb4b
   - enabled: 1
-    path: Assets/Scenes/M1S15.unity
+    path: Assets/Scenes/M1S15AR3.unity
     guid: 3579a250f4d2546ed8f9ec1324a2b0b1
   - enabled: 1
-    path: Assets/Scenes/M1S16.unity
+    path: Assets/Scenes/M1S16I7.unity
     guid: 360cd880957e4491e906ca5e134bcc1f
   - enabled: 1
-    path: Assets/Scenes/M1S17.unity
+    path: Assets/Scenes/M1S17V5.unity
     guid: ffe1db7efc14e43ac92622641928c11d
   - enabled: 1
-    path: Assets/Scenes/M1S18.unity
+    path: Assets/Scenes/M1S18O.unity
     guid: f38ce83da4b7442b59048d86d5d42245
   - enabled: 1
     path: Assets/Scenes/M2_GPSLocation.unity

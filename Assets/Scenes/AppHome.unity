@@ -989,7 +989,6 @@ GameObject:
   - component: {fileID: 381428776}
   - component: {fileID: 381428775}
   - component: {fileID: 381428777}
-  - component: {fileID: 381428778}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1134,21 +1133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0b11cf0ebdb49f3a223d0d2d81bacd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &381428778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381428770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbea9206736064135a82669761bb4550, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelA: {fileID: 0}
-  panelB: {fileID: 0}
-  panelC: {fileID: 0}
 --- !u!1 &383170955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1733,7 +1717,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: adfb154c8039941dd869fea2d1e05d3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a95c060f5c17c4a848ef9167755b7554, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3405,7 +3389,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c8ce509c833864c4fbd8ab123bd54ed5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aa442533f7a834a5893eb9597ebc3e69, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
